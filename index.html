@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html lang="zh-CN" data-page-node-id="z6jLrCDbRACr5FxgiKA4nW">
-<head data-page-node-id="Q27VCE3RSRe6VvyQFvZHxZ">
-<meta charset="utf-8" data-page-node-id="IUUz4dnSEfJBz7XoF2x0WS">
+<html lang="zh-CN" data-page-node-id="FdN6aADf0ZAgiZVU6bCjT6">
+<head data-page-node-id="9SJaouwQzYWvEBQL6F3I2X">
+<meta charset="utf-8" data-page-node-id="jMAZZhwZ1jM9x5d6V8PCsI">
 <title>Qwen3-TTS 音色库 · 批量试听</title>
 <style>
   :root { --bg:#f7f8fa; --card:#fff; --line:#e5e7eb; --txt:#1f2328; --sub:#6b7280; --accent:#2563eb; }
@@ -9,13 +9,15 @@
   body { margin:0; padding:32px 28px 60px; background:var(--bg); color:var(--txt);
          font:14px/1.6 -apple-system,"Segoe UI","Microsoft YaHei",sans-serif; }
   h1 { font-size:22px; margin:0 0 6px; }
-  .lead { color:var(--sub); margin:0 0 28px; }
+  .lead { color:var(--sub); margin:0 0 8px; }
+  .sum { font-size:12px; color:var(--sub); margin:0 0 28px; }
   section { margin-bottom:34px; }
-  h2 { font-size:16px; margin:0 0 14px; padding-left:10px; border-left:3px solid var(--accent); }
+  h2 { font-size:16px; margin:0 0 4px; padding-left:10px; border-left:3px solid var(--accent); }
   .count { font-weight:400; font-size:12px; color:var(--sub); margin-left:8px; }
+  .gdesc { font-size:12px; color:var(--sub); margin:0 0 14px; padding-left:13px; }
   .grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(320px,1fr)); gap:14px; }
   .card { background:var(--card); border:1px solid var(--line); border-radius:10px; padding:14px 16px; }
-  .card-head { display:flex; justify-content:space-between; align-items:center; margin-bottom:10px; }
+  .card-head { display:flex; justify-content:space-between; align-items:center; margin-bottom:10px; gap:8px; }
   .tag { font-weight:600; font-size:14px; }
   .key { font-size:11px; color:var(--sub); font-family:ui-monospace,Consolas,monospace; }
   audio { width:100%; height:36px; }
@@ -25,228 +27,476 @@
   details p { font-size:12px; color:var(--sub); margin:8px 0 0; white-space:pre-wrap; }
 </style>
 </head>
-<body data-page-node-id="pc5VyYkimgB58gPIvvOvdZ">
-  <h1 data-page-node-id="Vn92KKFWW7GL5BVSZcfasb">Qwen3-TTS Voice Design · 音色库</h1>
-  <p class="lead" data-page-node-id="N2sD1I2Bm7IVJ6oshcOx3N">共 20 个音色样本，全部使用同一段参考文本生成，便于横向对比。点开描述可查看喂给模型的音色指令。</p>
+<body data-page-node-id="fuMlLh5hsZPmv8xf8hh8Ip">
+  <h1 data-page-node-id="7UNA3572moDYAseUocaPsM">Qwen3-TTS Voice Design · 音色库</h1>
+  <p class="lead" data-page-node-id="ssXnD795qNRwvaSYBXHEcc">按分组试听，点开描述可查看喂给模型的音色指令；角色同时已保存到 ComfyUI 的 <code data-page-node-id="pfJe9I0ilx1Xx0H9g2zqws">models/voices</code>，可直接用于后续配音。</p>
+  <p class="sum" data-page-node-id="waOjGRO9nT3LL1ShhUABwq">共 48 个音色 · 7 个分组 · 同组内使用同一段参考文本，便于横向对比</p>
   
-    <section data-page-node-id="8QPKEQsTVcb6buCT9J1Hce">
-      <h2 data-page-node-id="jvDuUN2gZXnkIwtrFoWpTB">儿童 · 女 <span class="count" data-page-node-id="j6FKRU0ekHjKAyF6b1qTnw">1 个音色</span></h2>
-      <div class="grid" data-page-node-id="sSooMpa6TOHx6mGLAblknl">
-      <div class="card" data-page-node-id="UR8hNT9Vl6R2TgrE711WPL">
-        <div class="card-head" data-page-node-id="7IvB7XbfVjYwHzXqkn0xB7">
-          <span class="tag" data-page-node-id="o3CXI8qEd1eeD8d7STZ0FG">甜美稚嫩</span>
-          <span class="key" data-page-node-id="J9abAGuGResbPKbTM30dDY">child_f_sweet</span>
+    <section data-page-node-id="qFm3LXNDgHtuDBIyXu4y9D">
+      <h2 data-page-node-id="tkAoj7NBDnNKU4RL17UJhm">儿童 <span class="count" data-page-node-id="kNqTzeGhWmWVVgZfxLs2sS">6 个音色</span></h2>
+      <p class="gdesc" data-page-node-id="pE5Qh15k2dUYAZ8ijjn5fL">按 3 / 6 / 8 岁细分，年龄越小吐字越含混、音调越高</p>
+      <div class="grid" data-page-node-id="FruEaWqLRQt84VxxLa8MyF">
+      <div class="card" data-page-node-id="zyUFYCgVJjPpqfn9gQi4sb">
+        <div class="card-head" data-page-node-id="c6gpIfXQB9IBj7pCUTLgAe">
+          <span class="tag" data-page-node-id="bGkRpA0KhIAz4U99qLA8BH">3岁·奶声奶气</span>
+          <span class="key" data-page-node-id="jkIfCVbJogeaaKfftbAnXa">kid03_m</span>
         </div>
-        <audio controls preload="none" src="out/child_f_sweet.flac" data-page-node-id="c6d0DCQz2MyExmLjq8Phhr"></audio>
-        <div class="meta" data-page-node-id="RcGJJzNROeZsBLs4zlHH2M">seed 1001 · 18.2s</div>
-        <details data-page-node-id="4qxXPl85wKSJDLahrX4jxE"><summary data-page-node-id="Zp0dOKCSPsLY9dHxEumlu6">音色描述</summary><p data-page-node-id="ioB5FHpBmRdToUn6wc8kKG">六七岁小女孩的声音，音调很高很甜，音色轻盈透亮，像风铃一样。语速适中偏快，吐字带一点孩子气的含糊但整体可辨，句尾习惯性上扬。语气软糯撒娇，充满童真和想象力，偶尔有一两声清脆的笑意藏在字里行间。</p></details>
+        <audio controls preload="none" src="out/kid03_m.flac" data-page-node-id="EumkC6N9zn305tXkpeuNEL"></audio>
+        <div class="meta" data-page-node-id="oGRzJXiW9aBL6ASV5l6urM">3岁男孩·奶声含糊 · seed 1000 · 26.2s</div>
+        <details data-page-node-id="pnd0M548g4Cv5BHBMFoawo"><summary data-page-node-id="WFOKd6FugjhJGnzWcOTdkP">音色描述</summary><p data-page-node-id="kVC1FnKJos9UGPVk7KLAcO">三岁小男孩的声音，音调极高、又细又亮，奶声奶气。吐字含混不清，常常把音发错或漏字，句子很短、断断续续，边想边说，中间夹着'嗯''那个'之类的停顿。音色稚嫩，带很多气声和吞咽声，说话像在撒娇，可爱但发音很不标准，完全是小宝宝的说话状态。</p></details>
+      </div>
+      <div class="card" data-page-node-id="atLVL5E3RTVnxs1vwtrDL8">
+        <div class="card-head" data-page-node-id="AhSwCxCKBYJnYpMrreusOo">
+          <span class="tag" data-page-node-id="JyVbqP1mIdv0zEwAGVmcne">3岁·软糯稚嫩</span>
+          <span class="key" data-page-node-id="PymsMcqBWbmBkqPAQ4Z8yo">kid03_f</span>
+        </div>
+        <audio controls preload="none" src="out/kid03_f.flac" data-page-node-id="jF1O6NFNUPPe7BMcvhDp5n"></audio>
+        <div class="meta" data-page-node-id="EyRN8zKTZG74D7BZfgv0m9">3岁女孩·软糯稚嫩 · seed 1001 · 26.5s</div>
+        <details data-page-node-id="nA2xxuNeEglIWdCtISTQtK"><summary data-page-node-id="IrijlxUS6tmxnBUGOHGtfG">音色描述</summary><p data-page-node-id="8KMWP4P1o6iuFNFtq3Slkt">三岁小女孩的声音，音调极高、又细又软，奶声奶气。吐字含混、咬字不准，句子短且碎，语速慢，有很多停顿和重复。音色稚嫩，带明显的气声和轻微漏风，像刚学会说话不久的小宝宝在认真地表达，软糯、天真、发音很不标准。</p></details>
+      </div>
+      <div class="card" data-page-node-id="RMB9WEO2ycBAySKgkDlnPv">
+        <div class="card-head" data-page-node-id="y6aUv01O4tinBHrzHEBPv9">
+          <span class="tag" data-page-node-id="jx7ajiDEwW757LGxo2ZrDJ">6岁·清脆活泼</span>
+          <span class="key" data-page-node-id="5LVvNhWfXRbkPwM7Al2AUV">child_m_lively</span>
+        </div>
+        <audio controls preload="none" src="out/child_m_lively.flac" data-page-node-id="ZHk9avfWNQLzK9C57T0VOu"></audio>
+        <div class="meta" data-page-node-id="b8le65BKfeMHEDYoFSVKGz">6岁男孩·清脆活泼 · seed 1000 · 20.1s</div>
+        <details data-page-node-id="QLUJz4EzNRhoSjFo3GOXyr"><summary data-page-node-id="aiUNTTO0l1jynniP4CpKGb">音色描述</summary><p data-page-node-id="VQx5DirrGweJgJIVeKrmed">五六岁小男孩的声音，音调高而清脆，奶声奶气但吐字清楚，语速偏快，句尾常常不自觉地扬起来，带着天真好奇的劲儿。音色明亮干净，没有杂质，说话时有孩子气的停顿和换气，偶尔有一点漏风的感觉。情绪饱满，像在跟小伙伴分享新发现。</p></details>
+      </div>
+      <div class="card" data-page-node-id="Q6OQyzoHqy98K0a62TlvIm">
+        <div class="card-head" data-page-node-id="ozhj84S4OWv0xogEi4Reji">
+          <span class="tag" data-page-node-id="txI7CF7TPAzSjDBDLMBfAt">6岁·甜美稚嫩</span>
+          <span class="key" data-page-node-id="JiqHrBPo8yJyH8lc3xoqkJ">child_f_sweet</span>
+        </div>
+        <audio controls preload="none" src="out/child_f_sweet.flac" data-page-node-id="9KS97FSGorPCG29OVurRLt"></audio>
+        <div class="meta" data-page-node-id="NEnj1kncRYGwOcCNs9WcsA">6岁女孩·甜美稚嫩 · seed 1001 · 18.2s</div>
+        <details data-page-node-id="Dva66r96QbpldOr8uwDfvU"><summary data-page-node-id="baVJdf9wvZdxL77IOfm2Cw">音色描述</summary><p data-page-node-id="0u7bbJX6QIzGrUQvU1Il0G">六七岁小女孩的声音，音调很高很甜，音色轻盈透亮，像风铃一样。语速适中偏快，吐字带一点孩子气的含糊但整体可辨，句尾习惯性上扬。语气软糯撒娇，充满童真和想象力，偶尔有一两声清脆的笑意藏在字里行间。</p></details>
+      </div>
+      <div class="card" data-page-node-id="9zHoj1nM6iRqb8CMARkiqj">
+        <div class="card-head" data-page-node-id="J1o19LjIIRx6CjuQbrQwUl">
+          <span class="tag" data-page-node-id="xSRfAkWA4Tp0tqiUjkhhGM">8岁·清亮活泼</span>
+          <span class="key" data-page-node-id="843M5tIemGPVulqWDAOSwo">kid08_m</span>
+        </div>
+        <audio controls preload="none" src="out/kid08_m.flac" data-page-node-id="sRXwkVosLHH779b8qqGhRq"></audio>
+        <div class="meta" data-page-node-id="M0xpDuCVeQph5CVBvMZfeA">8岁男孩·清亮认真 · seed 1004 · 41.5s</div>
+        <details data-page-node-id="qeFMwXPRlcAjWwkxuhg3Vm"><summary data-page-node-id="DfgDDYVJZa5iJZvYuqg2YI">音色描述</summary><p data-page-node-id="aDKm9Jbw5ktcPVU1Go4zmA">八岁小男孩的声音，音调偏高、清脆响亮，吐字已经基本清晰标准，但还保留童声的稚嫩感。语速偏快，语调起伏大、情绪外放，说话像小学生兴奋地讲学校里发生的事，活泼、有精神，偶尔说得急了有点喘。没有变声痕迹。</p></details>
+      </div>
+      <div class="card" data-page-node-id="FUVnNcqVgM50WW0nLYArWc">
+        <div class="card-head" data-page-node-id="pwnFgQajtEkZcjOnXpfYp2">
+          <span class="tag" data-page-node-id="xeblefxsBNsHEVWzKiOJT6">8岁·清亮甜美</span>
+          <span class="key" data-page-node-id="1EOV06fUhhhGu9xMz64GMr">kid08_f</span>
+        </div>
+        <audio controls preload="none" src="out/kid08_f.flac" data-page-node-id="Sw6UiEWSXAwOxG7mlfnXhz"></audio>
+        <div class="meta" data-page-node-id="FHcwdett7k6FrG6EhxYvwl">8岁女孩·清亮甜美 · seed 1005 · 20.5s</div>
+        <details data-page-node-id="joOG7RNPUpzNPdFx43ovmR"><summary data-page-node-id="PsAtIPzLb5h7AqgR0ch8TN">音色描述</summary><p data-page-node-id="pEPbtHWBDEzJ12OxRDGQLC">八岁小女孩的声音，音调高、清亮甜美，吐字清晰标准，语速中等偏快，语调活泼上扬、带着孩子气的夸张。朗读感强，像小学生有感情地朗读课文，清脆、认真、可爱，声音里有童真但没有幼儿期的含混。</p></details>
       </div></div>
     </section>
-    <section data-page-node-id="j1OZP10AVVmpkQkStCN8We">
-      <h2 data-page-node-id="qLcB7YTXbyn1nipZGqwuLE">儿童 · 男 <span class="count" data-page-node-id="wn6M0r7INPbFlP8J3CMFhh">1 个音色</span></h2>
-      <div class="grid" data-page-node-id="s2sBbdFvDsGV8FBjDN4YbT">
-      <div class="card" data-page-node-id="4Y6kgApaxdRbQzTjL9zJaM">
-        <div class="card-head" data-page-node-id="1Hxy1ABuKpsXHqb9mRvXPC">
-          <span class="tag" data-page-node-id="JLTd2NbSW3kc6UxRaihjCX">清脆活泼</span>
-          <span class="key" data-page-node-id="3qXNLLcLDJ7d5BPqa0xy0G">child_m_lively</span>
+    <section data-page-node-id="Ud68stFYYqmRKwqOVC1haT">
+      <h2 data-page-node-id="A1tymLNkZmJE6yZ5fNCwsl">少年 <span class="count" data-page-node-id="tbmMgY7ngIwDa9ea6m3QBp">2 个音色</span></h2>
+      <p class="gdesc" data-page-node-id="2YhZZMLHXI24Ep1AsDmWSZ">变声期前后的青春期音色</p>
+      <div class="grid" data-page-node-id="BsCGcttwd9d9gI8Bg1Atq5">
+      <div class="card" data-page-node-id="oQSDGrzN8WAgFz585CIe8t">
+        <div class="card-head" data-page-node-id="x1SXUaXcx2P8opAM0fXKeK">
+          <span class="tag" data-page-node-id="BN6CbxeutoGE0zDr2tAIIl">阳光朝气</span>
+          <span class="key" data-page-node-id="6FtJz8FPDEbnjvJI0Cylps">teen_m_sunny</span>
         </div>
-        <audio controls preload="none" src="out/child_m_lively.flac" data-page-node-id="rzcA16HXbR6pPWmOY3FvDV"></audio>
-        <div class="meta" data-page-node-id="9gyCRh6VPvwIuHf607VOYh">seed 1000 · 20.1s</div>
-        <details data-page-node-id="NNrUKFms1aVUCtwbgSd0q6"><summary data-page-node-id="kiCczz7PJWofIEdwayaKhK">音色描述</summary><p data-page-node-id="LVeGQSwuGgzXvoDOCGE2pS">五六岁小男孩的声音，音调高而清脆，奶声奶气但吐字清楚，语速偏快，句尾常常不自觉地扬起来，带着天真好奇的劲儿。音色明亮干净，没有杂质，说话时有孩子气的停顿和换气，偶尔有一点漏风的感觉。情绪饱满，像在跟小伙伴分享新发现。</p></details>
+        <audio controls preload="none" src="out/teen_m_sunny.flac" data-page-node-id="bx3SeLS5E9YqkD1U8qhhB9"></audio>
+        <div class="meta" data-page-node-id="3KQLjunUOpGtC0OWv9g1uN">少年男·阳光朝气 · seed 1002 · 18.1s</div>
+        <details data-page-node-id="QpdzpivGPjYRkpw6jC0Gy5"><summary data-page-node-id="LXIKMMB37ntboCfWY58cCU">音色描述</summary><p data-page-node-id="Y2FnWBMMN1LIKFZZZ8KE6z">十五六岁少年的声音，刚过变声期，嗓音清爽里带着一点未定型的青涩，音高比成年男性略高，音色明亮有朝气。语速较快，语调起伏明显，充满少年人的热忱和冲劲，说话干脆利落，偶尔有点毛躁。无沙哑，无低沉。</p></details>
+      </div>
+      <div class="card" data-page-node-id="Au8YtThg4Ry1uTi60g86pP">
+        <div class="card-head" data-page-node-id="c4maX29HvOfLpVEt6nqqIK">
+          <span class="tag" data-page-node-id="q5ElffBPebOwFSJzKYhXnI">清甜灵动</span>
+          <span class="key" data-page-node-id="SSffFgIXfEKRPoytuXo69y">teen_f_fresh</span>
+        </div>
+        <audio controls preload="none" src="out/teen_f_fresh.flac" data-page-node-id="f74WxpJOet33IANTDt7nI3"></audio>
+        <div class="meta" data-page-node-id="IVPd3n92jN2iyDfidPvVrC">少女·清甜灵动 · seed 1003 · 20.2s</div>
+        <details data-page-node-id="1ptVDv8m8wKaGFzil0sZbK"><summary data-page-node-id="BPDwzKjMxG9AfbxBM8yDbX">音色描述</summary><p data-page-node-id="c5xo23Ff8MG3XWaxAqbBVF">十六七岁高中女生的声音，音色清甜干净，音调偏高但已经脱去童声，带着少女特有的轻盈感。语速明快，语调活泼有弹性，情绪外放，说话像在跟朋友聊天，偶尔带一点俏皮的尾音上扬。吐字清晰，气息饱满。</p></details>
       </div></div>
     </section>
-    <section data-page-node-id="JLYKCvAV31vfDosF6h4Vu8">
-      <h2 data-page-node-id="fwov6UGx5SI3TddnuxzHnH">少年 · 女 <span class="count" data-page-node-id="1Ded80RI1P4RZ8A1T06v8E">1 个音色</span></h2>
-      <div class="grid" data-page-node-id="YreG8yZPGpm51yzebfcmbV">
-      <div class="card" data-page-node-id="AyDrePY3zMv88Ap7XuXTEa">
-        <div class="card-head" data-page-node-id="b1iEm3Qpw1SYLbCECX9Dvn">
-          <span class="tag" data-page-node-id="9mVVrDYZCbDMMTSWVsdydN">清甜灵动</span>
-          <span class="key" data-page-node-id="liFNJMfy1bYzsj0xn4HHXZ">teen_f_fresh</span>
+    <section data-page-node-id="5IDTDIpwbU7gtY45v4CojA">
+      <h2 data-page-node-id="5AqT6idDqLwkrmWnDnKYmq">青年 <span class="count" data-page-node-id="WlgkTiAfssDoHorWbKhgdy">6 个音色</span></h2>
+      <p class="gdesc" data-page-node-id="l4Zbw94K6wVr8FSjm1lnLd">主力音色段，覆盖温和 / 磁性 / 活力 / 知性等方向</p>
+      <div class="grid" data-page-node-id="tWprNHiFL3KdfFHueR4MTS">
+      <div class="card" data-page-node-id="YyjRc1YjEEoKUAuNpTFmM2">
+        <div class="card-head" data-page-node-id="gfTDEjSZIiayrApJVGQhqn">
+          <span class="tag" data-page-node-id="Nl2SOlgzLSwa90DjpQGEXB">清朗温和</span>
+          <span class="key" data-page-node-id="MvzAshXT0J2KMMOABrEMbL">youth_m_clear</span>
         </div>
-        <audio controls preload="none" src="out/teen_f_fresh.flac" data-page-node-id="c3M5MqeQ3Adyo8Scjr3ZiR"></audio>
-        <div class="meta" data-page-node-id="XM9PdMaJNsNvv7pCtBeEHl">seed 1003 · 20.2s</div>
-        <details data-page-node-id="03Lrx3jsK5zBrI7JJoliqR"><summary data-page-node-id="BcsxUhp3VCzb553kd8BmCj">音色描述</summary><p data-page-node-id="k7qJ35HpEecdag0eYtNFmR">十六七岁高中女生的声音，音色清甜干净，音调偏高但已经脱去童声，带着少女特有的轻盈感。语速明快，语调活泼有弹性，情绪外放，说话像在跟朋友聊天，偶尔带一点俏皮的尾音上扬。吐字清晰，气息饱满。</p></details>
+        <audio controls preload="none" src="out/youth_m_clear.flac" data-page-node-id="2a8AUqX6zsAb4RwZeAfzZ3"></audio>
+        <div class="meta" data-page-node-id="auj7NNINDGWJoWhVagcTC8">青年男·清朗温和 · seed 1004 · 18.2s</div>
+        <details data-page-node-id="SGMGIfqvxesPLmngooWfhz"><summary data-page-node-id="N6IC02Acu777bG9fq8UkvB">音色描述</summary><p data-page-node-id="1OpZJMsUOPTD29wLrG9zRQ">二十多岁青年男性的声音，音色清朗干净，音高适中，共鸣位置靠前，说话温和有礼、语速平稳从容，吐字清晰标准。语调自然舒缓，没有夸张起伏，气质阳光干净，像电台里那种让人舒服的年轻男声。</p></details>
+      </div>
+      <div class="card" data-page-node-id="LMBDBnxl8Op9MUnOFm43bU">
+        <div class="card-head" data-page-node-id="EPihCED5h8ePk6yPDjeQqq">
+          <span class="tag" data-page-node-id="i7BJaJWGw8HbPGLnnnqYxZ">磁性低沉</span>
+          <span class="key" data-page-node-id="5SlAQtjk1XJxB12e48t0pz">youth_m_magnetic</span>
+        </div>
+        <audio controls preload="none" src="out/youth_m_magnetic.flac" data-page-node-id="0hzZPZezTuaT4fOMV7b9Av"></audio>
+        <div class="meta" data-page-node-id="gMjYkqG8KJbGdfmlKnY7jQ">青年男·磁性低沉 · seed 1005 · 24.2s</div>
+        <details data-page-node-id="qKbz8HktLga46ePEEyt1jO"><summary data-page-node-id="DHqAPRACMGFFoTaNuqbh7P">音色描述</summary><p data-page-node-id="pSs9mLUBQ4mNLZxcf4zgKX">二十七八岁男性声音，音域偏低，音色温暖厚实带有明显磁性的低频共振，中气十足但不浑厚。语速偏慢，咬字沉稳有力，气息绵长，语调平直克制、几乎没有上扬，像深夜电台的男主播，松弛且有倾诉感。</p></details>
+      </div>
+      <div class="card" data-page-node-id="dhaGMFeHdYsj6EA0zakZU5">
+        <div class="card-head" data-page-node-id="JsR9BdGox9tR2lkDrACzEp">
+          <span class="tag" data-page-node-id="OY3fB4k13kkE4oiT6bNhfW">活力明快</span>
+          <span class="key" data-page-node-id="baEn3bBpj1QyklMlnw3m7S">youth_m_energetic</span>
+        </div>
+        <audio controls preload="none" src="out/youth_m_energetic.flac" data-page-node-id="NnGvQ5j7TViRb61p4qbC7S"></audio>
+        <div class="meta" data-page-node-id="Nc9dDanmMXZpaKVpYnM9y9">青年男·活力明快 · seed 1006 · 18.1s</div>
+        <details data-page-node-id="lFlftMyNYVdOSQNum7K0Gi"><summary data-page-node-id="t6gUiKfWWHUfxoyYYctiHh">音色描述</summary><p data-page-node-id="qW6ARxWI8ygH6TJmxjuact">二十多岁男性声音，音色明亮有穿透力，语速快、节奏感强，字与字之间衔接紧凑，重音明确，语调起伏大、富有煽动性和热情，像带货主播或体育解说，中气足、精神饱满，略带一点喊话式的用力感。</p></details>
+      </div>
+      <div class="card" data-page-node-id="HHtIG8AoI96fZSdBbtKD31">
+        <div class="card-head" data-page-node-id="PeU4B2KAP030zTwELWv87D">
+          <span class="tag" data-page-node-id="Y8kjXO6tN3TD7FqABwyyeL">甜美温柔</span>
+          <span class="key" data-page-node-id="2gj8NtidF0HxBBn2BHxeUf">youth_f_sweet</span>
+        </div>
+        <audio controls preload="none" src="out/youth_f_sweet.flac" data-page-node-id="Nf8aFCqzXGHurfxareifP1"></audio>
+        <div class="meta" data-page-node-id="jEefav4aOVHFtvBYwyHcAJ">青年女·甜美温柔 · seed 1007 · 22.2s</div>
+        <details data-page-node-id="kPNZvQFnOFpkv9VGYxi0Fw"><summary data-page-node-id="C0tA3zvlUjjxgJcBNcaPOF">音色描述</summary><p data-page-node-id="qrXUc3RwDCaQNOgQIZ5BCG">二十多岁女性的声音，音色柔和甜美，音调中偏高，带着轻微的鼻音和气息感，语速舒缓，语调温婉上扬，吐字轻柔圆润。气质亲切体贴，说话像在哄人，尾音常常轻轻飘起来，整体松弛不紧绷。</p></details>
+      </div>
+      <div class="card" data-page-node-id="Z47SXtrnzdbbxqYcz78HOo">
+        <div class="card-head" data-page-node-id="OELZRiDZLMlgUhjmhVCIxE">
+          <span class="tag" data-page-node-id="jpgf5DYHDyLiNZhmPbxa10">清冷知性</span>
+          <span class="key" data-page-node-id="4tuwWbauwMADL4fLWT7s7C">youth_f_cool</span>
+        </div>
+        <audio controls preload="none" src="out/youth_f_cool.flac" data-page-node-id="cjSblyD3nieOqzvN4H1IjC"></audio>
+        <div class="meta" data-page-node-id="898dHkUu65mPFiMXcLuXBW">青年女·清冷知性 · seed 1008 · 22.1s</div>
+        <details data-page-node-id="Q1Uet03AVsCWeYtCQyYfGU"><summary data-page-node-id="UmUV5tx1J63urSdcfk7g9C">音色描述</summary><p data-page-node-id="AILGSl6dE4WHBgsUXRVRON">二十七八岁女性声音，音调中等偏高，音色清冽纯净、几乎没有杂音，咬字极为标准清晰，语速平稳，语调克制平直、起伏很小，情绪冷淡理性。气质疏离而专业，像纪录片解说或有声书里的冷静叙述者。</p></details>
+      </div>
+      <div class="card" data-page-node-id="ybHt56fMuhkUiirWIpIHXW">
+        <div class="card-head" data-page-node-id="R7xL4o0PaDpOpJUeL2dxzp">
+          <span class="tag" data-page-node-id="Tis2hz860C6prVeS3pXp6C">活力四射</span>
+          <span class="key" data-page-node-id="FpT8gFP6a6wUmoRWHBb4lL">youth_f_vivid</span>
+        </div>
+        <audio controls preload="none" src="out/youth_f_vivid.flac" data-page-node-id="AOdDIwoTWpiSBcK4YFEM8q"></audio>
+        <div class="meta" data-page-node-id="HVtDqB0LyLDLBCui5Asrvq">青年女·活力四射 · seed 1009 · 18.2s</div>
+        <details data-page-node-id="Cdy7nF7M9gcwnAcmeKkUC7"><summary data-page-node-id="gGom6mh8WdvsYKXCwgpJSG">音色描述</summary><p data-page-node-id="J6KG6MRAtbNAa267EOnhE8">二十出头女性的声音，音调偏高，音色明亮跳跃，语速快、节奏轻快，语调起伏夸张、表情丰富，常有上扬的惊叹尾音。中气足、感染力强，像综艺节目里的活泼女主持，说话带笑意，朝气蓬勃。</p></details>
       </div></div>
     </section>
-    <section data-page-node-id="zgzy22TGvblipefb8LoJyb">
-      <h2 data-page-node-id="8QiqJtnEridciC25Dvsfcq">少年 · 男 <span class="count" data-page-node-id="vNHvd4CzEp4PB50czlBSy2">1 个音色</span></h2>
-      <div class="grid" data-page-node-id="BjBruwVMFY6Uzn2MvTpTaO">
-      <div class="card" data-page-node-id="q3CgVeuc4BUMCLcafd0wNI">
-        <div class="card-head" data-page-node-id="5cmrUUBfBGEx1jsCDH1OET">
-          <span class="tag" data-page-node-id="8qt2KcKBEINAAErGSjUs73">阳光朝气</span>
-          <span class="key" data-page-node-id="tglwU3vU4FS2pqCtAWbXAw">teen_m_sunny</span>
+    <section data-page-node-id="O5xWH7nA1A96Y0HCkT9gAr">
+      <h2 data-page-node-id="HsgxGGySiEpML6XYYW276V">中年 <span class="count" data-page-node-id="Kr9gJq2blg397JqRb75PXU">6 个音色</span></h2>
+      <p class="gdesc" data-page-node-id="0U3FQYQNnvOnhty9PZFZ2a">成熟音色，适合旁白、解说、权威感场景</p>
+      <div class="grid" data-page-node-id="Xgbw9T8mCpopLgaGMgs8oj">
+      <div class="card" data-page-node-id="fvnU4ODedEh3OrcGllrMUO">
+        <div class="card-head" data-page-node-id="RkQWGCVsNFTz8ZZTN1aZZb">
+          <span class="tag" data-page-node-id="tdGu00KqXK01bukQSAKZnR">醇厚沉稳</span>
+          <span class="key" data-page-node-id="jAtWGlxTHbNmBlQbfDnxTq">mid_m_mellow</span>
         </div>
-        <audio controls preload="none" src="out/teen_m_sunny.flac" data-page-node-id="yHVfsIEWUhtIFSss1S2Wqu"></audio>
-        <div class="meta" data-page-node-id="nF89KfPa2CpjEL9Z506TVJ">seed 1002 · 18.1s</div>
-        <details data-page-node-id="whdIyuSNGPGnLG3wQSlQDN"><summary data-page-node-id="ZT0JUhOZ94LTocXDvK4zE7">音色描述</summary><p data-page-node-id="GyoYQIVSLr4NuivD6g6IZo">十五六岁少年的声音，刚过变声期，嗓音清爽里带着一点未定型的青涩，音高比成年男性略高，音色明亮有朝气。语速较快，语调起伏明显，充满少年人的热忱和冲劲，说话干脆利落，偶尔有点毛躁。无沙哑，无低沉。</p></details>
+        <audio controls preload="none" src="out/mid_m_mellow.flac" data-page-node-id="69uqrIoD2tr6qwRb6esPAp"></audio>
+        <div class="meta" data-page-node-id="eZjYvkLjMq9Z8aw0TaTpVK">中年男·醇厚沉稳 · seed 1010 · 20.1s</div>
+        <details data-page-node-id="I9WLk1z6qg0Ic6EAFjDaEg"><summary data-page-node-id="dVE73D2OwiaADNEpy0EXNt">音色描述</summary><p data-page-node-id="oKYOZljvfWJgGd8nB5CA1E">四十多岁成熟男性的声音，低沉醇厚，嗓音带有自然的胸腔共鸣，语速平缓从容，吐字清晰标准，语调稳定克制，没有夸张起伏。气质沉稳可靠、温和内敛，略带阅历感，无沙哑破音，不生硬冰冷也不油腻，像阅历丰富的儒雅男士，说话松弛自然，停顿合理。</p></details>
+      </div>
+      <div class="card" data-page-node-id="PQcs1EtcZXHmdlo1MbDOWv">
+        <div class="card-head" data-page-node-id="096NORnjcKZTe2FIxe8sWI">
+          <span class="tag" data-page-node-id="bLXjRPmwYzVmqC3m1Tx7U6">浑厚有力</span>
+          <span class="key" data-page-node-id="HZ8KPgUx9OATB8m6NLYS17">mid_m_strong</span>
+        </div>
+        <audio controls preload="none" src="out/mid_m_strong.flac" data-page-node-id="oB28onibl2b5dbrtSRBKP2"></audio>
+        <div class="meta" data-page-node-id="8MHKlKEMfOn1ao6Ks2Epwv">中年男·浑厚有力 · seed 1011 · 22.1s</div>
+        <details data-page-node-id="jFsqJBxAAuIzMVQDru5HEL"><summary data-page-node-id="6RLaHIYseHlw1G3R4o7Fm0">音色描述</summary><p data-page-node-id="eXr6rOCyBSdtemrn6rf8mo">四十多岁男性声音，音域低，音色浑厚粗粝、胸腔和鼻腔共鸣都很重，中气极足，音量感强。语速慢而稳，每个字都咬得实、落得重，语调下沉，带有权威感和压迫感，像新闻联播播音员或企业宣传片旁白，庄重、可信、不容置疑。</p></details>
+      </div>
+      <div class="card" data-page-node-id="3WgzrAnnWIVYzbn1pzv4fu">
+        <div class="card-head" data-page-node-id="aPyJb4HKHhid8ECasDIpEU">
+          <span class="tag" data-page-node-id="FYpSfORXGirvpNgdO1n2NK">温和儒雅</span>
+          <span class="key" data-page-node-id="pNFhAWsexeoehMvNAr4bYb">mid_m_gentle</span>
+        </div>
+        <audio controls preload="none" src="out/mid_m_gentle.flac" data-page-node-id="1yfj9rQAtDRERBCMIwfkFa"></audio>
+        <div class="meta" data-page-node-id="T16AdW2mcbAcT1TphlHn34">中年男·温和儒雅 · seed 1012 · 22.2s</div>
+        <details data-page-node-id="nTG9tir9gDYfiH0As3qib7"><summary data-page-node-id="GuuzeETdxV7H8BaRtUtX8X">音色描述</summary><p data-page-node-id="h9SkXiU7SQGISJyjQzFoJc">四十多岁男性声音，音调中等，音色温润柔和略带一点书卷气，语速中等偏慢，咬字轻巧文雅，语调平缓上行、带着讲解的耐心。气质儒雅亲切，像大学教授或博物馆讲解员，说话不疾不徐，声音里带着笑意和包容感。</p></details>
+      </div>
+      <div class="card" data-page-node-id="dobsBpGHxglO6uxEAnwdo3">
+        <div class="card-head" data-page-node-id="OF5wslynIOIMi3SFiUAbmm">
+          <span class="tag" data-page-node-id="Nv5jJDtkFCFnxUvZHddntB">温婉柔和</span>
+          <span class="key" data-page-node-id="udEQEOzYwcVFaOrZWSA8lq">mid_f_warm</span>
+        </div>
+        <audio controls preload="none" src="out/mid_f_warm.flac" data-page-node-id="yP4DkJvEvdjCA4jmRSaJ6d"></audio>
+        <div class="meta" data-page-node-id="Ai1SdQCYFNs9jkMBLsOPgZ">中年女·温婉柔和 · seed 1013 · 22.1s</div>
+        <details data-page-node-id="iByrOxRHHuH4z8bk2OTRgE"><summary data-page-node-id="MGWxHFFJmODfAUkrLE7YVH">音色描述</summary><p data-page-node-id="KHQs3zI4V9HwalermVoMAG">四十岁左右女性的声音，音调中等，音色温润饱满，带着成熟女性特有的柔和质感，语速舒缓，吐字圆润，语调温和起伏自然。气质亲切包容，像邻家阿姨或深夜情感节目女主播，说话有安抚感，声音里带着笑意。</p></details>
+      </div>
+      <div class="card" data-page-node-id="v4DCqkDh3DHIqtm13xfZaN">
+        <div class="card-head" data-page-node-id="YkeCrN9zX6k7jIDJnByD5P">
+          <span class="tag" data-page-node-id="ADUaLb7twBnzFwAaHcSbwA">干练职业</span>
+          <span class="key" data-page-node-id="AIiXjDdrNMtCODNt2D8PiS">mid_f_crisp</span>
+        </div>
+        <audio controls preload="none" src="out/mid_f_crisp.flac" data-page-node-id="uUULNLqYFD5Dt1mE9iVaTS"></audio>
+        <div class="meta" data-page-node-id="ueeAgqx8buvqrnGu7riMvh">中年女·干练职业 · seed 1014 · 20.2s</div>
+        <details data-page-node-id="5yOgmXQc7MTIPpXPFPH6jX"><summary data-page-node-id="HTtLj6X398WAv68faIBxtE">音色描述</summary><p data-page-node-id="aq4Lp246gY9a9QKphbTr3w">三十八九岁职业女性声音，音调中等，音色干脆利落、几乎没有气声，咬字精准、语速偏快，节奏感和逻辑重音都很明确，语调平稳少起伏。气质专业干练，像新闻女主播或企业发布会主持人，理性、清晰、有分寸感。</p></details>
+      </div>
+      <div class="card" data-page-node-id="ptmhh156DH38bzg9BpBCNR">
+        <div class="card-head" data-page-node-id="9pg90J5mzqpr4jzZQPE4WU">
+          <span class="tag" data-page-node-id="TTlzk2atw34OzYWGVUGPXZ">知性优雅</span>
+          <span class="key" data-page-node-id="alX5iy4zTtrUz5AOHwoeD8">mid_f_elegant</span>
+        </div>
+        <audio controls preload="none" src="out/mid_f_elegant.flac" data-page-node-id="5kKHCYZypdz6HuU1dWvFHf"></audio>
+        <div class="meta" data-page-node-id="6GFsGPNADFkhGEgmpCyFG3">中年女·知性优雅 · seed 1015 · 22.1s</div>
+        <details data-page-node-id="P1nbMGGdZM8fICyXnVwNXl"><summary data-page-node-id="QOo5lGqZgSCI5SYj2AFtP5">音色描述</summary><p data-page-node-id="M1Ob9Z882vs1S8SL5KdU6x">四十多岁女性的声音，音调中低，音色细腻优雅带轻微的醇厚感，语速从容不迫，吐字讲究，语调舒缓下行，句尾常常轻轻收住。气质知性安静，像文学作品的朗读者，声音里有厚度和分寸，优雅而不冷淡。</p></details>
       </div></div>
     </section>
-    <section data-page-node-id="UDrBumXotWNugTKszCb0j5">
-      <h2 data-page-node-id="XAa3xLgXIqDabfErc7mv5X">青年 · 女 <span class="count" data-page-node-id="Rf1J3KhKrhz1lR4oHZRFgI">3 个音色</span></h2>
-      <div class="grid" data-page-node-id="559PRR3WxQOZDZWUWXoD6w">
-      <div class="card" data-page-node-id="m1WnYcWmIWtfqGX63B2kwO">
-        <div class="card-head" data-page-node-id="OvZUOdltEiE2UMES2DBL6s">
-          <span class="tag" data-page-node-id="2jfdzJSBhAn8G3E9DrkpA8">甜美温柔</span>
-          <span class="key" data-page-node-id="alkZUEYLc9PjwTTV4VnoCO">youth_f_sweet</span>
+    <section data-page-node-id="w4c78bNZhIwg9cM0ElSYOg">
+      <h2 data-page-node-id="YLDdmlXCZDBA4H99v6gJFd">老年 <span class="count" data-page-node-id="uLrz7SXptz2jPq4PDldfeK">4 个音色</span></h2>
+      <p class="gdesc" data-page-node-id="shSztuNUWu6Bzh7jw3vuIS">声带松弛、语速慢，含沙哑与慈祥两种方向</p>
+      <div class="grid" data-page-node-id="vQDjuBv7Gwn6bMKVqVD8if">
+      <div class="card" data-page-node-id="QovgwixHjHyzooOV3f1gTP">
+        <div class="card-head" data-page-node-id="J4ZX79X3aHHxsximeZff6h">
+          <span class="tag" data-page-node-id="FAyNfAd9l8fvE8ax5dXcVt">沧桑沙哑</span>
+          <span class="key" data-page-node-id="SXMSY6PFvwRTPhnE9jWocG">senior_m_hoarse</span>
         </div>
-        <audio controls preload="none" src="out/youth_f_sweet.flac" data-page-node-id="XOK1DsbW7A51W1KB03lGd7"></audio>
-        <div class="meta" data-page-node-id="VURgTLsZpt7uesu9XZhoSQ">seed 1007 · 22.2s</div>
-        <details data-page-node-id="VJWjaOugckyYmGXgThETPA"><summary data-page-node-id="AobiL4jqLbqyecxp2brlig">音色描述</summary><p data-page-node-id="rNDPtrMzYuJFmnlESK9xIt">二十多岁女性的声音，音色柔和甜美，音调中偏高，带着轻微的鼻音和气息感，语速舒缓，语调温婉上扬，吐字轻柔圆润。气质亲切体贴，说话像在哄人，尾音常常轻轻飘起来，整体松弛不紧绷。</p></details>
+        <audio controls preload="none" src="out/senior_m_hoarse.flac" data-page-node-id="Au6JTFTN2YKFbxJF0aircz"></audio>
+        <div class="meta" data-page-node-id="f0YNKV7m4KbHylkXbOcL21">老年男·沧桑沙哑 · seed 1016 · 36.3s</div>
+        <details data-page-node-id="BE5r22EU24YeUZCIGOGuUy"><summary data-page-node-id="D0DBxI6yKXvVz5OiJRdSIl">音色描述</summary><p data-page-node-id="3lFcEhzrdHoaDFG17JYaJj">七十岁左右老爷爷的声音，音调低沉，音色明显沙哑粗糙、带颗粒感和气息声，声带松弛使尾音有轻微颤抖和拖沓。语速慢，吐字略含混但基本可辨，语调起伏小、平淡悠长。像经历过风霜的老者在慢慢讲述往事，沧桑、质朴、有故事感。</p></details>
       </div>
-      <div class="card" data-page-node-id="OHdBWDCl2oGd0wtvpdVmLG">
-        <div class="card-head" data-page-node-id="k5xxMUx1xKJ99BtqAQtDVA">
-          <span class="tag" data-page-node-id="dh9co7uZrgKY5V2dZ7POvD">清冷知性</span>
-          <span class="key" data-page-node-id="QCzNt6bdzadH71xNVZlj12">youth_f_cool</span>
+      <div class="card" data-page-node-id="PEOaXmGoLWkXC2TBbrn80w">
+        <div class="card-head" data-page-node-id="iDHp2I1lRRY5yPInXPxAEk">
+          <span class="tag" data-page-node-id="xDZ58qaKAkvPajXC3Bzz2V">慈祥温和</span>
+          <span class="key" data-page-node-id="MU94vYfNdIsT9a7SpYZm8D">senior_m_kind</span>
         </div>
-        <audio controls preload="none" src="out/youth_f_cool.flac" data-page-node-id="1DdWD2xQvRMYEUxUOupnRy"></audio>
-        <div class="meta" data-page-node-id="0eDtQaNR1KO440HSwtTI74">seed 1008 · 22.1s</div>
-        <details data-page-node-id="PCj6FZ29zGoxyyMkfnEnLF"><summary data-page-node-id="GEM4aQeVCIbzmlFyTdDrce">音色描述</summary><p data-page-node-id="Uc2zOVcVQ8d7lMoZ1vH56J">二十七八岁女性声音，音调中等偏高，音色清冽纯净、几乎没有杂音，咬字极为标准清晰，语速平稳，语调克制平直、起伏很小，情绪冷淡理性。气质疏离而专业，像纪录片解说或有声书里的冷静叙述者。</p></details>
+        <audio controls preload="none" src="out/senior_m_kind.flac" data-page-node-id="kN574xWyvC5a9b4m9bolaK"></audio>
+        <div class="meta" data-page-node-id="q3p4VABO7v0g9lsFbNC0Mp">老年男·慈祥温和 · seed 1017 · 36.3s</div>
+        <details data-page-node-id="3MEzsEQWQRIfGHZAposnbq"><summary data-page-node-id="vo1EEC4yOg7rCzNEKsm9Ts">音色描述</summary><p data-page-node-id="ssOHTpbQvt3gmWHD6887BQ">七十多岁老爷爷的声音，音调偏低但柔和不哑，音色温暖带一点老年人的虚化，语速很慢，语调舒缓上扬、充满善意，句尾常常拖长并轻轻上翘。像在给孙辈讲故事，慈祥、耐心、让人安心，说话时似乎带着微笑。</p></details>
       </div>
-      <div class="card" data-page-node-id="hfXYP91G9bubgVabkVOwqa">
-        <div class="card-head" data-page-node-id="TirXhNo4J3BtwwqxFgQX4t">
-          <span class="tag" data-page-node-id="VGH9QfZKLY7kHQREP11zDf">活力四射</span>
-          <span class="key" data-page-node-id="0e7BJ7xsMCHwUTM7Kfhs17">youth_f_vivid</span>
+      <div class="card" data-page-node-id="OX41rR7cRzDKs1hiidLfHn">
+        <div class="card-head" data-page-node-id="hfUPSKhW47CkJSBChl9A9y">
+          <span class="tag" data-page-node-id="z8hNN5eCR9lgPYbradRCfq">慈爱温和</span>
+          <span class="key" data-page-node-id="0p6KH8yBmXW0xlC3hKOfjE">senior_f_kind</span>
         </div>
-        <audio controls preload="none" src="out/youth_f_vivid.flac" data-page-node-id="8ipLvaJzhWb6SRqRv12CEC"></audio>
-        <div class="meta" data-page-node-id="A7aJv3cVaOiohMAczvtOjb">seed 1009 · 18.2s</div>
-        <details data-page-node-id="2lo2PiDSSTYP0quXMaecSA"><summary data-page-node-id="d9GwRMmbavI3Rbvgcac83l">音色描述</summary><p data-page-node-id="5m1x9q6nTQeo19qYmL9OFT">二十出头女性的声音，音调偏高，音色明亮跳跃，语速快、节奏轻快，语调起伏夸张、表情丰富，常有上扬的惊叹尾音。中气足、感染力强，像综艺节目里的活泼女主持，说话带笑意，朝气蓬勃。</p></details>
+        <audio controls preload="none" src="out/senior_f_kind.flac" data-page-node-id="AH2TADIZ8Pz4ElnystcPqj"></audio>
+        <div class="meta" data-page-node-id="w56T6dfKElQk2P0BCcftbG">老年女·慈爱温和 · seed 1018 · 30.4s</div>
+        <details data-page-node-id="BflilXmlClWRtCLXyDRwvQ"><summary data-page-node-id="zNE5HcHdeoFEMqIkSFTQbn">音色描述</summary><p data-page-node-id="BUj6fJOzWyOmEjILKwNeYn">七十岁左右老奶奶的声音，音调中偏高但音色发虚发飘，带明显的年龄感，语速缓慢，吐字有些松散，语调温和起伏，尾音常常软软地拖长。像邻家奶奶在唠家常，慈爱、絮叨、亲切，说话中气不足但充满疼爱。</p></details>
+      </div>
+      <div class="card" data-page-node-id="zVYdKFOPBGEab3C0cHsLys">
+        <div class="card-head" data-page-node-id="qKerOAQKHZ7E0yUyGjvFLT">
+          <span class="tag" data-page-node-id="Ooj1kMvNroEqav9SFZpGGq">沙哑缓慢</span>
+          <span class="key" data-page-node-id="8wTJLauGJBgsPjiHp5f3iG">senior_f_hoarse</span>
+        </div>
+        <audio controls preload="none" src="out/senior_f_hoarse.flac" data-page-node-id="X3AclXFt16m4sS0UfZQKT8"></audio>
+        <div class="meta" data-page-node-id="6ixB90Tq5h0eS1HTg3H2u0">老年女·沙哑缓慢 · seed 1019 · 38.3s</div>
+        <details data-page-node-id="B55btrjEbP9vL4xaA670tU"><summary data-page-node-id="KffjKhsAgTD8Tqi2AM8CbY">音色描述</summary><p data-page-node-id="58Tgdq4icSJCzq89PVNcU6">七十五岁左右老太太的声音，音调低沉，音色沙哑干涩、有明显的气息摩擦声，声带松弛导致字与字之间有停顿和拖音。语速很慢，音量偏小，语调平直少起伏，吐字略含混。像久病或操劳一生的老妪在低声说话，苍老、迟缓、质朴。</p></details>
       </div></div>
     </section>
-    <section data-page-node-id="8bNejAGIpdBkHBC1H3FTdd">
-      <h2 data-page-node-id="qAX6K6gDvzxUR4eTsbEcbK">青年 · 男 <span class="count" data-page-node-id="ljmYRfqT21w3nNTxEk2Ee8">3 个音色</span></h2>
-      <div class="grid" data-page-node-id="uk9PMzSqxz4ovmYfvJXfQ0">
-      <div class="card" data-page-node-id="kB7A3mdvNwYcpJT8KG3HQT">
-        <div class="card-head" data-page-node-id="ZsvaHTupB7OxO3pVZcoqcu">
-          <span class="tag" data-page-node-id="puvbxyFk9dwPFCSJXxNumZ">清朗温和</span>
-          <span class="key" data-page-node-id="fhbjIK1xMiSIjT4hIPy4mY">youth_m_clear</span>
+    <section data-page-node-id="xjNYEWA33XdRDc7o5Mta6H">
+      <h2 data-page-node-id="EVjmMGIKJAGsD2VILpDnmz">方言 <span class="count" data-page-node-id="D00YJgVx2TTmRuvfb2R7xB">10 个音色</span></h2>
+      <p class="gdesc" data-page-node-id="8LNJ5b1MZ6D88KClUr5cmP">使用方言化参考文本生成，需试听确认口音准确度</p>
+      <div class="grid" data-page-node-id="mvM1PPvIwBoRwZ4kxKMRv1">
+      <div class="card" data-page-node-id="2kTDEkqmKm3l0QfUe2oFkL">
+        <div class="card-head" data-page-node-id="yCwID19bo3THGpEJjWN1AR">
+          <span class="tag" data-page-node-id="IRlwxMrtf5py85S9WHElHp">东北话</span>
+          <span class="key" data-page-node-id="WH2H02yJZPGo9wLYoDOPzj">dia_dongbei_m</span>
         </div>
-        <audio controls preload="none" src="out/youth_m_clear.flac" data-page-node-id="6EqxEHfBaadap5UYx6AAn4"></audio>
-        <div class="meta" data-page-node-id="Tgor4UOM8wTIagU7jzD4gT">seed 1004 · 18.2s</div>
-        <details data-page-node-id="gaeSmTrDo5POfSf4kHTDay"><summary data-page-node-id="NkYTnGkVDIsuQfKNpnEWpT">音色描述</summary><p data-page-node-id="QTUJNpABsObqT6ExEGiIl1">二十多岁青年男性的声音，音色清朗干净，音高适中，共鸣位置靠前，说话温和有礼、语速平稳从容，吐字清晰标准。语调自然舒缓，没有夸张起伏，气质阳光干净，像电台里那种让人舒服的年轻男声。</p></details>
+        <audio controls preload="none" src="out/dia_dongbei_m.flac" data-page-node-id="6v1sdtLI2gQKroAZl6w7i0"></audio>
+        <div class="meta" data-page-node-id="X68lPFFHYHZU2FamlGZ6pu">东北话·男声 · seed 1024 · 40.3s</div>
+        <details data-page-node-id="w2fgldy2ivI2CIiJuzVfGs"><summary data-page-node-id="74gb8iW3SueCW89ArGldit">音色描述</summary><p data-page-node-id="hprDcd7IwYeebYRG3vdFt7">三十五岁东北男性的声音，说东北话（东北官话）。音色洪亮粗粝、中气足，平翘舌不分、儿化音多，语调夸张上扬、句尾常带'呗''啊''呢'。语速中等偏快，干脆利落，气质豪爽幽默、热情直率，像东北大哥在唠嗑。</p></details>
       </div>
-      <div class="card" data-page-node-id="kwLTGUU5xcMjNYXT52p9X9">
-        <div class="card-head" data-page-node-id="w5eJ291oAzrNHVBTeNaAmK">
-          <span class="tag" data-page-node-id="lCuekW2wdZCI2swWpiMdkY">磁性低沉</span>
-          <span class="key" data-page-node-id="wQfZZpDia2rg0IgLoWzLth">youth_m_magnetic</span>
+      <div class="card" data-page-node-id="5DZK31JOvu9wqAW00HzytU">
+        <div class="card-head" data-page-node-id="hmrsgGE49iHzDW5yHIwh8J">
+          <span class="tag" data-page-node-id="KtiPbLHSitE5x3WHSGGmQn">东北话</span>
+          <span class="key" data-page-node-id="PVuE3NAgvQbqQ1ObBE2Bwa">dia_dongbei_f</span>
         </div>
-        <audio controls preload="none" src="out/youth_m_magnetic.flac" data-page-node-id="FCEYcP0qPt8y8ZAaBbYNnm"></audio>
-        <div class="meta" data-page-node-id="In4R6D6mKVsuXbUYsWZhzb">seed 1005 · 24.2s</div>
-        <details data-page-node-id="sc0bUBhwWGEQFLEo2KA7Xc"><summary data-page-node-id="qjdNQ17BCqAvTGIVIGvpvQ">音色描述</summary><p data-page-node-id="f2bJQBiQYIp0HiDAfTKfwm">二十七八岁男性声音，音域偏低，音色温暖厚实带有明显磁性的低频共振，中气十足但不浑厚。语速偏慢，咬字沉稳有力，气息绵长，语调平直克制、几乎没有上扬，像深夜电台的男主播，松弛且有倾诉感。</p></details>
+        <audio controls preload="none" src="out/dia_dongbei_f.flac" data-page-node-id="ATAMcmAe9fyA2Im5j3XIi7"></audio>
+        <div class="meta" data-page-node-id="syJcErSUyCIFsPJAlg2qDC">东北话·女声 · seed 1025 · 18.1s</div>
+        <details data-page-node-id="N4vTJdFJYzuwO4FkTGpP8x"><summary data-page-node-id="ZSk8MeLvsoeRwQWYRA2UmA">音色描述</summary><p data-page-node-id="RlezwtlBZFAUzgbJ5Ct4JB">三十二岁东北女性的声音，说东北话（东北官话）。音色爽朗明亮、中气足，平翘舌不分，语调起伏大、句尾上扬带'呗''呢''啊'。语速快、干脆利落，气质热情大方、幽默直爽、有点泼辣，像东北大姐在唠家常。</p></details>
       </div>
-      <div class="card" data-page-node-id="7CAF0yZGQT8vitHXhTx6KA">
-        <div class="card-head" data-page-node-id="j4HRhiCKLW3o1wAzdz4w0R">
-          <span class="tag" data-page-node-id="9x3NDbM1eqKyYMuGPotu8D">活力明快</span>
-          <span class="key" data-page-node-id="6EXxCmuF3cVVo3epHoIa2O">youth_m_energetic</span>
+      <div class="card" data-page-node-id="vQEclvpNjpd1sfsWZa5XXB">
+        <div class="card-head" data-page-node-id="EMDy9BJ5yw9V9mZVWenYtL">
+          <span class="tag" data-page-node-id="Ca4Feor37TWHUYkY3KBFjY">四川话</span>
+          <span class="key" data-page-node-id="ZwSlYqv9AWPasgHUMpX4VG">dia_sichuan_m</span>
         </div>
-        <audio controls preload="none" src="out/youth_m_energetic.flac" data-page-node-id="vI6p1CXNtQb5NDc5i8etM3"></audio>
-        <div class="meta" data-page-node-id="tXjNRJgi6br6ZB4LIReWS8">seed 1006 · 18.1s</div>
-        <details data-page-node-id="p3KW11udmyvVchs6xe0TyQ"><summary data-page-node-id="FUmUsVf5Sml5OdJjEiT6yN">音色描述</summary><p data-page-node-id="PkJYvF94mmJbSExOLfyEDh">二十多岁男性声音，音色明亮有穿透力，语速快、节奏感强，字与字之间衔接紧凑，重音明确，语调起伏大、富有煽动性和热情，像带货主播或体育解说，中气足、精神饱满，略带一点喊话式的用力感。</p></details>
+        <audio controls preload="none" src="out/dia_sichuan_m.flac" data-page-node-id="YFSAweqd68kZo7GJ8BEbm2"></audio>
+        <div class="meta" data-page-node-id="DJdXGMeQNqc7DJCNlJfOnp">四川话·男声 · seed 1026 · 22.2s</div>
+        <details data-page-node-id="3uKH9s8zLdhQZS1cGR0BGe"><summary data-page-node-id="Hsb4XJhF4CoNl1587A6RMe">音色描述</summary><p data-page-node-id="aAdlec1tRziP3BV4vNfLKg">三十五岁四川男性的声音，说四川话（西南官话成渝片）。音色洪亮爽快，n/l 不分、平翘舌不分，语速中等偏快，句尾常带'噻''哈''嘛''嗦'。语调上扬有弹性、抑扬顿挫明显，气质幽默泼辣、轻松自在，像成都茶馆里摆龙门阵的本地人。</p></details>
+      </div>
+      <div class="card" data-page-node-id="GYgb10v0jldW0mpAHnYb81">
+        <div class="card-head" data-page-node-id="hmcRS4LlTjXstirle900Hw">
+          <span class="tag" data-page-node-id="kR76g1r9cubEal0E5twnKX">四川话</span>
+          <span class="key" data-page-node-id="GAWOKWIpkNgYwtfHoBSFHv">dia_sichuan_f</span>
+        </div>
+        <audio controls preload="none" src="out/dia_sichuan_f.flac" data-page-node-id="QKFAb5ZhOQ1gPtoD5F1P47"></audio>
+        <div class="meta" data-page-node-id="iNi7k7yFbWnyOSpmAb0MpC">四川话·女声 · seed 1027 · 20.2s</div>
+        <details data-page-node-id="lXcRVkR1eZVy6kXudM8FAs"><summary data-page-node-id="VYBeChEL4NsEYgLnO5ACmk">音色描述</summary><p data-page-node-id="GOnqrTrFwvw9McvFT5CDvQ">三十岁四川女性的声音，说四川话（西南官话成渝片）。音色清亮偏快、口齿伶俐，平翘舌不分，句尾常带'嘛''哈''噻'。语速快，语调起伏明显、干脆利落，气质泼辣爽快又带点俏皮，像成都妹子在聊天。</p></details>
+      </div>
+      <div class="card" data-page-node-id="o8xdUDXOanILFMULx6an21">
+        <div class="card-head" data-page-node-id="NVoHdv2G7CL7nFGcAECnt0">
+          <span class="tag" data-page-node-id="ziHGaPKDK7gSnZzG0MuLkR">粤语</span>
+          <span class="key" data-page-node-id="F0xNOgCWjipVErPjmsKbQh">dia_yue_m</span>
+        </div>
+        <audio controls preload="none" src="out/dia_yue_m.flac" data-page-node-id="RHBKhPU9sgKtACdAEZ5brO"></audio>
+        <div class="meta" data-page-node-id="nYsQ2tBZTGgfAZEnbYMUGe">粤语·男声 · seed 1028 · 26.4s</div>
+        <details data-page-node-id="qm7TUVBimNPqdJkUMxNUWd"><summary data-page-node-id="dYs2vj8mm7ciJuDuPTFIV7">音色描述</summary><p data-page-node-id="4EpoSs2qQfUFsE9qF4GcpY">四十岁中国香港男性的声音，用粤语（广东话）朗读。音色厚实稳重，语速中等，粤语六声调准确，入声短促，句尾常用'啦''嘅''嘢'。咬字清晰、语调自然有起伏，气质成熟专业，像香港电台的男播音员。</p></details>
+      </div>
+      <div class="card" data-page-node-id="OeFBAIO6Dqdi2gBt48FkJt">
+        <div class="card-head" data-page-node-id="N7JshDg1nrL430W1JP6238">
+          <span class="tag" data-page-node-id="6Ihp9L4PyRCQtDwgmjHkMt">粤语</span>
+          <span class="key" data-page-node-id="e3GjUK3jebgkest8dFaafP">dia_yue_f</span>
+        </div>
+        <audio controls preload="none" src="out/dia_yue_f.flac" data-page-node-id="smfvR19kRsO0AjcRErsDY2"></audio>
+        <div class="meta" data-page-node-id="HlEUELD0xd9XMZm7ehr1yh">粤语·女声 · seed 1029 · 26.2s</div>
+        <details data-page-node-id="TLKtqD3r24954zF6I8rIAJ"><summary data-page-node-id="zW3tPiGvSzClfVGgwTS89K">音色描述</summary><p data-page-node-id="xy8Rw6bHDgipvCMxkeo4L2">二十八岁中国香港女性的声音，用粤语（广东话）朗读。音色柔和明亮，语速中等，粤语六声调准确，句尾常用'啦''喎''嘅''呀'。咬字清晰，语调起伏自然、温柔有礼，像香港电台的女主持或客服语音。</p></details>
+      </div>
+      <div class="card" data-page-node-id="syK0wRhaCIMJoDVuH153UC">
+        <div class="card-head" data-page-node-id="nIWCiUT2bszBfgNhJ9QxXs">
+          <span class="tag" data-page-node-id="60tBqJFNKfQ3ucpqbMzH49">北京话</span>
+          <span class="key" data-page-node-id="BIQWxbUQcXQMCCbm5UOVMA">dia_beijing_m</span>
+        </div>
+        <audio controls preload="none" src="out/dia_beijing_m.flac" data-page-node-id="HnFGPItBbNdT0xaZv6lJyq"></audio>
+        <div class="meta" data-page-node-id="IIvbH0TlJeP1c4BooSvwBA">北京话·男声 · seed 1030 · 26.4s</div>
+        <details data-page-node-id="LhZ2Cmrgzdrm9LkdWq3zLD"><summary data-page-node-id="TYtUlPumUcznBZUPG4mR12">音色描述</summary><p data-page-node-id="Htiey0ZlnO5O0DUm9uJV1H">四十岁北京男性的声音，说北京话。儿化音极重、吞字明显，音色松懒带鼻音，语调悠长上扬、句尾常带'儿''呗''呀'。语速中等偏慢，气质贫嘴、局气、见多识广，像老北京胡同大爷在侃大山，松弛自在。</p></details>
+      </div>
+      <div class="card" data-page-node-id="NYyGYPQ2eSBV4GWRW0BOqQ">
+        <div class="card-head" data-page-node-id="5P1h8Gggu9Qld8Ilx4REpY">
+          <span class="tag" data-page-node-id="7lvJkG5zSr9uGQMnR2hBwq">上海话</span>
+          <span class="key" data-page-node-id="MKEgnmkC9SgcA6mYDVEE9A">dia_shanghai_f</span>
+        </div>
+        <audio controls preload="none" src="out/dia_shanghai_f.flac" data-page-node-id="vzxD26kJpT5nGrvMXYffC3"></audio>
+        <div class="meta" data-page-node-id="4As1Vmwql4yHqqLOJcE1F4">上海话·女声 · seed 1031 · 32.2s</div>
+        <details data-page-node-id="dC03rozttjqhB3tdXvnfMR"><summary data-page-node-id="O7tPlAHxKC11vwKWpuvR95">音色描述</summary><p data-page-node-id="Uypk9ltzKU3kMqcpsvhztR">四十岁上海女性的声音，说上海话（吴语太湖片）。音色软糯细腻、音调偏高，语速中等偏快，带吴语特有的连续变调和短促的入声，句尾常带'呀''哦''呃'。气质精致温婉、讲究体面，像上海阿姨在弄堂里闲话家常。</p></details>
+      </div>
+      <div class="card" data-page-node-id="FDBOL0rDlJ4ysvWHUi9d3T">
+        <div class="card-head" data-page-node-id="TnCBQJvmeIkBqECLWPgJZm">
+          <span class="tag" data-page-node-id="NVFuCMjzKlM1wEZZQmsz7Q">河南话</span>
+          <span class="key" data-page-node-id="OD54DWCfIbSlV9SNTVpC2A">dia_henan_m</span>
+        </div>
+        <audio controls preload="none" src="out/dia_henan_m.flac" data-page-node-id="1PmJZ9WtSA1G9QapDb176x"></audio>
+        <div class="meta" data-page-node-id="1YzZpya1nBkMO1FFcZFm4W">河南话·男声 · seed 1032 · 20.5s</div>
+        <details data-page-node-id="MY5XeEWoBNZfsedQIAKTkt"><summary data-page-node-id="BgDcX9ersX2bG03G4693kA">音色描述</summary><p data-page-node-id="TUIMXBOkUNWb8k63M0aTQZ">四十二岁河南男性的声音，说河南话（中原官话）。音色朴实浑厚，语速中等，语调下沉、句尾常带'嘞''中''呗'，儿化较少。气质憨厚实在、直来直去，像中原老乡在地头拉家常。</p></details>
+      </div>
+      <div class="card" data-page-node-id="2HT7OnUPwfjeEeipTUMkBv">
+        <div class="card-head" data-page-node-id="nACiUlIgAvtg42YB24e8me">
+          <span class="tag" data-page-node-id="ifofhGFgqISLj3AYmevZVc">台湾腔</span>
+          <span class="key" data-page-node-id="2JzX3CGBF3kIdQdHAMXFgx">dia_taiwan_f</span>
+        </div>
+        <audio controls preload="none" src="out/dia_taiwan_f.flac" data-page-node-id="SAQkCDECDbxJchzHDDHa6X"></audio>
+        <div class="meta" data-page-node-id="XyX3UPHzKE0C0HjFtKFroM">台湾腔·女声 · seed 1033 · 34.2s</div>
+        <details data-page-node-id="rFcvYfFoZ3pJfnLl8vYXeq"><summary data-page-node-id="3X1e9HAE7VfXsIAZhOen9K">音色描述</summary><p data-page-node-id="ycMMwCfTERj2xLybfmoxW5">二十五岁中国台湾女性的声音，台湾国语腔。音色甜软轻柔，句尾习惯性上扬并拖长音，常带'欸''喔''啦''蛤'，语速偏慢，咬字轻、气声多。气质温柔可爱、略带撒娇感，像台湾偶像剧里的女主角在说话。</p></details>
       </div></div>
     </section>
-    <section data-page-node-id="Obsbik4QLGRGXeb9kJAy5J">
-      <h2 data-page-node-id="zUvBB91HYxt5RssH0rRdeE">中年 · 女 <span class="count" data-page-node-id="tD0PR9sUFWZaaCRHIUuigr">3 个音色</span></h2>
-      <div class="grid" data-page-node-id="AqIO4DBNOrvSaiO4hIMKzY">
-      <div class="card" data-page-node-id="0fQoRqq684HWFba8rPgf1K">
-        <div class="card-head" data-page-node-id="uWGhmGgoC1FlWQlwlujszF">
-          <span class="tag" data-page-node-id="nTXcEKtvzQErnbqPIkYzUR">温婉柔和</span>
-          <span class="key" data-page-node-id="QIZeqh0VhtRRTGIaYZr7DB">mid_f_warm</span>
+    <section data-page-node-id="htE1GieMHHd90W2Soy7z3R">
+      <h2 data-page-node-id="TtvA9zmke9M5WHTC98sbTN">情绪 <span class="count" data-page-node-id="os0xfgfUvz5x6iDir8n4gm">14 个音色</span></h2>
+      <p class="gdesc" data-page-node-id="iU1nF8pOa4v5RO65CQjdXf">同一段情绪弹性文本，用于测试演播状态</p>
+      <div class="grid" data-page-node-id="Y8y9dSeQ5gj3CGUk0qOfjh">
+      <div class="card" data-page-node-id="q8OLzyX4Bt1cV3YaiUo4Em">
+        <div class="card-head" data-page-node-id="kg0sCfMHg4PcGKW2xVtmiL">
+          <span class="tag" data-page-node-id="mnfLOTthYHI3WhIa8eH3Pg">喜悦/兴奋</span>
+          <span class="key" data-page-node-id="3XymHVlEtv8i0XoAj8cYIi">emo_joy_m</span>
         </div>
-        <audio controls preload="none" src="out/mid_f_warm.flac" data-page-node-id="6TFitN2oX9agPULEbJEm3l"></audio>
-        <div class="meta" data-page-node-id="M8sfpIUJdINQtluHqR1s4W">seed 1013 · 22.1s</div>
-        <details data-page-node-id="R3G6yMAJbRNAEOhIKQLU6h"><summary data-page-node-id="lcq0vWPbZErUrhKVdnOxuz">音色描述</summary><p data-page-node-id="eZZqWQS0CJDhdazcgTVX0v">四十岁左右女性的声音，音调中等，音色温润饱满，带着成熟女性特有的柔和质感，语速舒缓，吐字圆润，语调温和起伏自然。气质亲切包容，像邻家阿姨或深夜情感节目女主播，说话有安抚感，声音里带着笑意。</p></details>
+        <audio controls preload="none" src="out/emo_joy_m.flac" data-page-node-id="7wZGBJHR9SKdxAKHkIc9tS"></audio>
+        <div class="meta" data-page-node-id="mHAM9jAn4vm77vhjav0d5s">喜悦兴奋·男声 · seed 1034 · 12.1s</div>
+        <details data-page-node-id="crH0PzOIk1wiEwEivcGEBq"><summary data-page-node-id="G42X0WVxMc6fXRo9FQLf2l">音色描述</summary><p data-page-node-id="mPLNxpv2zmqzsdPHV0STQY">三十岁男性声音，音色明亮饱满，情绪极度喜悦兴奋：语速快、音调整体抬高，句尾上扬，重音有力，说到开心处带明显笑意甚至笑声，气息轻快。像刚得知天大的好消息，压不住的开心要从声音里溢出来。</p></details>
       </div>
-      <div class="card" data-page-node-id="u5Oafm4MwBr99WerCtgNKp">
-        <div class="card-head" data-page-node-id="EgsmC01FegmYvz31QQQ8lr">
-          <span class="tag" data-page-node-id="BxxwHiKwZP6gROa3Nh8VEs">干练职业</span>
-          <span class="key" data-page-node-id="sZYrkW6c0Q6XiDe75DsTPn">mid_f_crisp</span>
+      <div class="card" data-page-node-id="K57UfpcTTq1V6Mzd7LMa1T">
+        <div class="card-head" data-page-node-id="h0IR86rgS9hJ0JIUrBAoaw">
+          <span class="tag" data-page-node-id="9UTr5B8dqASQkCX7noNmY3">喜悦/兴奋</span>
+          <span class="key" data-page-node-id="NYf2WgcZA84jU93TPol2GJ">emo_joy_f</span>
         </div>
-        <audio controls preload="none" src="out/mid_f_crisp.flac" data-page-node-id="HRXkOWBDkiJljVDUrkVY75"></audio>
-        <div class="meta" data-page-node-id="aLHRDH4oxCwx5WcUZ56LaD">seed 1014 · 20.2s</div>
-        <details data-page-node-id="uEUYGRvcYS2wl5EDxQcetS"><summary data-page-node-id="dFNivG1vUYYZldGvwiFy78">音色描述</summary><p data-page-node-id="ZhTo4vtDnxbinfUErfH2Mb">三十八九岁职业女性声音，音调中等，音色干脆利落、几乎没有气声，咬字精准、语速偏快，节奏感和逻辑重音都很明确，语调平稳少起伏。气质专业干练，像新闻女主播或企业发布会主持人，理性、清晰、有分寸感。</p></details>
+        <audio controls preload="none" src="out/emo_joy_f.flac" data-page-node-id="aXDe3LKORuhqAGYW4HQEzU"></audio>
+        <div class="meta" data-page-node-id="hNYQwvmf0MreydNK6zyPHQ">喜悦兴奋·女声 · seed 1035 · 14.2s</div>
+        <details data-page-node-id="b7ov54muLDY4M9HBDYZ5Mu"><summary data-page-node-id="iTsMNtsmCywpRaMZJInCED">音色描述</summary><p data-page-node-id="xpJl2Zn6cCkFOsEsCEQQCK">二十六岁女性声音，情绪喜悦兴奋：音调明显抬高、音色明亮轻快，语速快，句尾上扬且常常拖出欢快的尾音，带着明显的笑声和气声。像拆到心仪已久的礼物，欢喜、雀跃、感染力强。</p></details>
       </div>
-      <div class="card" data-page-node-id="VWU4ou0gXRWFBw5c7ZkCBE">
-        <div class="card-head" data-page-node-id="vu4krV5T0q4XQrwsF1G9qc">
-          <span class="tag" data-page-node-id="nkA4QQv5JBUAdgk6S2iOGQ">知性优雅</span>
-          <span class="key" data-page-node-id="7W7NqE5pVDkkJRwG03QoeN">mid_f_elegant</span>
+      <div class="card" data-page-node-id="2cFL3f18WEMFGOHiDahzFG">
+        <div class="card-head" data-page-node-id="Lu5cHU59BDR9QTni8UJQFi">
+          <span class="tag" data-page-node-id="b9J5V5nExbFB3nsiepjD8Q">悲伤/哽咽</span>
+          <span class="key" data-page-node-id="69N4xUetjdn86FHTOMsa2d">emo_sad_m</span>
         </div>
-        <audio controls preload="none" src="out/mid_f_elegant.flac" data-page-node-id="NMTmMaRteA64LJ90yydrF1"></audio>
-        <div class="meta" data-page-node-id="mISOOo9E4WIIbhtbqpbzFg">seed 1015 · 22.1s</div>
-        <details data-page-node-id="ui8hr3NDnLtnjAXGS8pyZ6"><summary data-page-node-id="Sg6XJKel3UvpX5i4Vw5GSG">音色描述</summary><p data-page-node-id="JDJkDtI28fVZusvzJKtokn">四十多岁女性的声音，音调中低，音色细腻优雅带轻微的醇厚感，语速从容不迫，吐字讲究，语调舒缓下行，句尾常常轻轻收住。气质知性安静，像文学作品的朗读者，声音里有厚度和分寸，优雅而不冷淡。</p></details>
-      </div></div>
-    </section>
-    <section data-page-node-id="AaYzXokwFd7WwToZiG1MZB">
-      <h2 data-page-node-id="wU2Z893lVQ9A4OfAFLRlTJ">中年 · 男 <span class="count" data-page-node-id="nX2D5QVdAqFe2vCwiT6G0n">3 个音色</span></h2>
-      <div class="grid" data-page-node-id="Jkr1PqRpLfjHyHH5HwreuV">
-      <div class="card" data-page-node-id="O888onLiF79fwHn91MddeP">
-        <div class="card-head" data-page-node-id="CvLMs19DrlcIVSFBXkONsy">
-          <span class="tag" data-page-node-id="vsZUKtn0dKZ5cxI3NowYC4">醇厚沉稳</span>
-          <span class="key" data-page-node-id="xdVH85XfPyZbER75XvhKBc">mid_m_mellow</span>
-        </div>
-        <audio controls preload="none" src="out/mid_m_mellow.flac" data-page-node-id="rinA3Ttx0vk7l5rVyKExNP"></audio>
-        <div class="meta" data-page-node-id="Icz5pkgUlXVJiO7upyH4Qv">seed 1010 · 20.1s</div>
-        <details data-page-node-id="lbrEUZddO9FMmf5p2VYDuW"><summary data-page-node-id="OAwHAtN6McdzvpbcOsQ0JG">音色描述</summary><p data-page-node-id="KDTjTe0qWd3iDujFam8t0R">四十多岁成熟男性的声音，低沉醇厚，嗓音带有自然的胸腔共鸣，语速平缓从容，吐字清晰标准，语调稳定克制，没有夸张起伏。气质沉稳可靠、温和内敛，略带阅历感，无沙哑破音，不生硬冰冷也不油腻，像阅历丰富的儒雅男士，说话松弛自然，停顿合理。</p></details>
+        <audio controls preload="none" src="out/emo_sad_m.flac" data-page-node-id="Wwi30HxKCoBJCW3cUMlHTP"></audio>
+        <div class="meta" data-page-node-id="ES2far2SpfzznOd83ZEnUj">悲伤哽咽·男声 · seed 1036 · 18.1s</div>
+        <details data-page-node-id="ZrXjozM0pGtm5PvYUh08yT"><summary data-page-node-id="qF6PaEilxqeTuWMVTRvmKY">音色描述</summary><p data-page-node-id="IUvvSaWQNqdNCHVbJWEH1H">三十五岁男性声音，情绪悲伤：语速慢、音调低沉下行，音色发虚发哑，气息不稳带哽咽和轻微抽泣，字与字之间有停顿，句尾无力地下垂。像刚经历重大失去、强忍着泪水在说话，压抑、疲惫、心碎。</p></details>
       </div>
-      <div class="card" data-page-node-id="NiYLXF0cgcFSFFs8KMHQga">
-        <div class="card-head" data-page-node-id="FOl0TFE2dUmqQa0NIMCxT1">
-          <span class="tag" data-page-node-id="rKUEG34BBZcNG4kV8fkQBc">浑厚有力</span>
-          <span class="key" data-page-node-id="5IhIjuSVgFjylZxuhyibcC">mid_m_strong</span>
+      <div class="card" data-page-node-id="55Ryg5ZPLHr569Ze0AoVBe">
+        <div class="card-head" data-page-node-id="0umeZCszuoDYbwNTU0qMIz">
+          <span class="tag" data-page-node-id="8HfVqnQyvZjSjsxXicEdCs">悲伤/哽咽</span>
+          <span class="key" data-page-node-id="ZYwu8Hs56jsH70zcqkNQer">emo_sad_f</span>
         </div>
-        <audio controls preload="none" src="out/mid_m_strong.flac" data-page-node-id="zwGjMHto7Q3bAK1HuuSY47"></audio>
-        <div class="meta" data-page-node-id="LWYzp3dgieaXj6c9hcGEVN">seed 1011 · 22.1s</div>
-        <details data-page-node-id="AidpHFCF6NRiK3ZYjK0BBg"><summary data-page-node-id="L68fFrfe8H3HMSDrYwyWnx">音色描述</summary><p data-page-node-id="FGUfVf1F90oFtTLGkJnI0u">四十多岁男性声音，音域低，音色浑厚粗粝、胸腔和鼻腔共鸣都很重，中气极足，音量感强。语速慢而稳，每个字都咬得实、落得重，语调下沉，带有权威感和压迫感，像新闻联播播音员或企业宣传片旁白，庄重、可信、不容置疑。</p></details>
+        <audio controls preload="none" src="out/emo_sad_f.flac" data-page-node-id="RniCcIvos6wHZ1nTS3AsTM"></audio>
+        <div class="meta" data-page-node-id="QBPjqqscNPb04sDK75Xzbm">悲伤哽咽·女声 · seed 1037 · 16.1s</div>
+        <details data-page-node-id="1nFBGIgVSiAcY79h13OkSE"><summary data-page-node-id="jqE1A6PThIYnbGuWOEamZ6">音色描述</summary><p data-page-node-id="bUD1XzRyxVZRrPDCMV0BFE">三十岁女性声音，情绪悲伤：语速慢，音调低沉下行，音色发颤发虚，句尾拖长并下垂，气息不稳，带明显的哽咽、鼻塞感和一两声抽泣。像刚哭过，努力平复情绪却还是忍不住颤抖。</p></details>
       </div>
-      <div class="card" data-page-node-id="329K4VUhbH7yfEbJfG7Q5e">
-        <div class="card-head" data-page-node-id="V7NlbeNtJ4lQFpy4JG9eqx">
-          <span class="tag" data-page-node-id="tfmhHdhH5lSQ2bvs1YzRkH">温和儒雅</span>
-          <span class="key" data-page-node-id="ZK2aXiisYWCyNlQ7Fz8qBl">mid_m_gentle</span>
+      <div class="card" data-page-node-id="ngvVVUbodheA0k7jcbITRN">
+        <div class="card-head" data-page-node-id="yK42Nr4mGtpB2LlBLOFnVz">
+          <span class="tag" data-page-node-id="xrmaZ1gvVKGBNra2d3iSL7">愤怒/激动</span>
+          <span class="key" data-page-node-id="iF8gWBRCj22qm4WgdG4KZH">emo_anger_m</span>
         </div>
-        <audio controls preload="none" src="out/mid_m_gentle.flac" data-page-node-id="wJH5DgHdHAfAqcqjqBkLxv"></audio>
-        <div class="meta" data-page-node-id="x6F1tYMB377axartciGenO">seed 1012 · 22.2s</div>
-        <details data-page-node-id="cPLLBWQXf7FVDkCKRFI4iC"><summary data-page-node-id="hROvAshxgtqC4aTFvHGE30">音色描述</summary><p data-page-node-id="l0BnkaxlclGFekBGHkQZPo">四十多岁男性声音，音调中等，音色温润柔和略带一点书卷气，语速中等偏慢，咬字轻巧文雅，语调平缓上行、带着讲解的耐心。气质儒雅亲切，像大学教授或博物馆讲解员，说话不疾不徐，声音里带着笑意和包容感。</p></details>
-      </div></div>
-    </section>
-    <section data-page-node-id="ZiADHyOKhQp5E4NFngqFEP">
-      <h2 data-page-node-id="u5xoSHOq2CkHQLWJTtx2TY">老年 · 女 <span class="count" data-page-node-id="fW3uQWPTUSZwRjVS6olPVw">2 个音色</span></h2>
-      <div class="grid" data-page-node-id="9qcJZehUjLn9ULM4AQ2L07">
-      <div class="card" data-page-node-id="fA7yYHt2TKfHwHa7CH4xcd">
-        <div class="card-head" data-page-node-id="dNv2rxg345H3ybe5hzbmDY">
-          <span class="tag" data-page-node-id="zfN17PXXsmAqqG11XAZ1fA">慈爱温和</span>
-          <span class="key" data-page-node-id="xJq6F8Mv3TbBLui6DD5b1m">senior_f_kind</span>
-        </div>
-        <audio controls preload="none" src="out/senior_f_kind.flac" data-page-node-id="EUBGjPFF2vKr439M6MD4FE"></audio>
-        <div class="meta" data-page-node-id="H5za9UrUnCFm4PuxHhox9C">seed 1018 · 30.4s</div>
-        <details data-page-node-id="siUKmASGGs1zZdGm2S4xBj"><summary data-page-node-id="W7jvZxs7EGE2OUvdfLkhyM">音色描述</summary><p data-page-node-id="s7MUgJOLlnC7VH4BABUvPd">七十岁左右老奶奶的声音，音调中偏高但音色发虚发飘，带明显的年龄感，语速缓慢，吐字有些松散，语调温和起伏，尾音常常软软地拖长。像邻家奶奶在唠家常，慈爱、絮叨、亲切，说话中气不足但充满疼爱。</p></details>
+        <audio controls preload="none" src="out/emo_anger_m.flac" data-page-node-id="kCn41nryDrD9nuUUFLrHUu"></audio>
+        <div class="meta" data-page-node-id="cL1cepsX9gWSuiTjDA878Z">愤怒激动·男声 · seed 1038 · 952.4s</div>
+        <details data-page-node-id="LRxofP9DG7Bpi2YuCKpZ0A"><summary data-page-node-id="oYbU9Bj8N8K2ADC0Uxnvzz">音色描述</summary><p data-page-node-id="zeytgGbXZlaq8hGXHAUH43">三十五岁男性声音，情绪愤怒：音色紧绷粗粝、音量明显加大，语速快，咬字很重、几乎一字一顿，音调忽高忽低、句尾猛地下砸，气息急促带喘息。像在强压怒火地斥责对方，随时可能爆发。</p></details>
       </div>
-      <div class="card" data-page-node-id="PDdAT6RbFtVOY236DRm8yj">
-        <div class="card-head" data-page-node-id="dxjvfKk3JKH4UyPaPGTdQ4">
-          <span class="tag" data-page-node-id="cBuve18zdbnyptVKMZ7NDB">沙哑缓慢</span>
-          <span class="key" data-page-node-id="PwUTnXoLfzRzV758PhVfsd">senior_f_hoarse</span>
+      <div class="card" data-page-node-id="kX8ICFG9sVLiFQkgLycB0t">
+        <div class="card-head" data-page-node-id="pxKFHGdNCQjRpAecjge6kf">
+          <span class="tag" data-page-node-id="KQVSDFinWU78vJrk9dkOfj">愤怒/激动</span>
+          <span class="key" data-page-node-id="B2G5XRcvhLDS6PYs9W3Pb7">emo_anger_f</span>
         </div>
-        <audio controls preload="none" src="out/senior_f_hoarse.flac" data-page-node-id="4muHPpTcqsF2iraeJmfbsk"></audio>
-        <div class="meta" data-page-node-id="rcE958Bc7rEK5sb4vwqmpS">seed 1019 · 38.3s</div>
-        <details data-page-node-id="EEm6ArkqxHIEjNraVXRDCb"><summary data-page-node-id="JnZwdeFxzaKRiqxuXfCsIB">音色描述</summary><p data-page-node-id="w9bsRrzFmoH5EgOLxovVVq">七十五岁左右老太太的声音，音调低沉，音色沙哑干涩、有明显的气息摩擦声，声带松弛导致字与字之间有停顿和拖音。语速很慢，音量偏小，语调平直少起伏，吐字略含混。像久病或操劳一生的老妪在低声说话，苍老、迟缓、质朴。</p></details>
-      </div></div>
-    </section>
-    <section data-page-node-id="86KNhjsFzXy5O5A0cM4jM7">
-      <h2 data-page-node-id="yHwkesTHV83XAFDJwYgJW0">老年 · 男 <span class="count" data-page-node-id="lNEMW7rumIlYb3EGdfvtkq">2 个音色</span></h2>
-      <div class="grid" data-page-node-id="KJinIlvkjmq7MsisRh6C4G">
-      <div class="card" data-page-node-id="shDSx4Mssdu2VeKBYnGbHf">
-        <div class="card-head" data-page-node-id="sOAF6NYOOPc2TEiLcjZyXv">
-          <span class="tag" data-page-node-id="GUs8pFmL0C9wAoVNTuwc7N">沧桑沙哑</span>
-          <span class="key" data-page-node-id="GeKELqMFgzW7d1eAMqMY1x">senior_m_hoarse</span>
-        </div>
-        <audio controls preload="none" src="out/senior_m_hoarse.flac" data-page-node-id="GqGaCwoFZRWWHK6QVFVhOp"></audio>
-        <div class="meta" data-page-node-id="dsEpHZ8AraAgjDdbTp6owD">seed 1016 · 36.3s</div>
-        <details data-page-node-id="RGOrCicyPQxgygoN2ACcpO"><summary data-page-node-id="Fzr2dBb3HXhTh8b4tlm2GF">音色描述</summary><p data-page-node-id="hkXfuJukVEColgI8NsqVup">七十岁左右老爷爷的声音，音调低沉，音色明显沙哑粗糙、带颗粒感和气息声，声带松弛使尾音有轻微颤抖和拖沓。语速慢，吐字略含混但基本可辨，语调起伏小、平淡悠长。像经历过风霜的老者在慢慢讲述往事，沧桑、质朴、有故事感。</p></details>
+        <audio controls preload="none" src="out/emo_anger_f.flac" data-page-node-id="cGoUbJdevaaxFwoy37Yu3K"></audio>
+        <div class="meta" data-page-node-id="i06zqz5kGj4vBFhIdgGhOV">愤怒激动·女声 · seed 1039 · 16.2s</div>
+        <details data-page-node-id="JfNzQbmMq6oLGKFlzJYE1w"><summary data-page-node-id="jBGpam1cZ0UajW0jaYgBtV">音色描述</summary><p data-page-node-id="QwRgd3ud6f2M0Wp8AEOYZ3">三十二岁女性声音，情绪愤怒：音调抬高且尖锐，语速快、语气咄咄逼人，咬字重、句尾短促下砸，气息急促，声音里带压抑的颤抖和哭腔。像被激怒后正在激烈地争吵，愤怒中透着委屈。</p></details>
       </div>
-      <div class="card" data-page-node-id="Q1WbwCMOb0lnccozLOtOlY">
-        <div class="card-head" data-page-node-id="VS3266CDff2rQ4rgqpGhEc">
-          <span class="tag" data-page-node-id="Y9V5saRdu8VNh8HoP9RrPw">慈祥温和</span>
-          <span class="key" data-page-node-id="MlcsUantcDkvU2KZy7lxYT">senior_m_kind</span>
+      <div class="card" data-page-node-id="w7q6qLKMTRn5Rk3DR8RYsH">
+        <div class="card-head" data-page-node-id="2JYJaLcWxir6eZMIKvH3pw">
+          <span class="tag" data-page-node-id="d0oECi5M5lTCdkrmLgNSNb">恐惧/紧张</span>
+          <span class="key" data-page-node-id="FhISxSvhPgEuiU7zB31Rg6">emo_fear_f</span>
         </div>
-        <audio controls preload="none" src="out/senior_m_kind.flac" data-page-node-id="MBvSCdJ2qnOi0ooY8wKuEM"></audio>
-        <div class="meta" data-page-node-id="jTVkZomCVNCsJhkaLpI0Rw">seed 1017 · 36.3s</div>
-        <details data-page-node-id="5MXhV2ekhWJKGuSw2GRRVH"><summary data-page-node-id="1q0vGmM98hrqPGfbs6DzKp">音色描述</summary><p data-page-node-id="Gtw3gWWswC41DJizTYLeCB">七十多岁老爷爷的声音，音调偏低但柔和不哑，音色温暖带一点老年人的虚化，语速很慢，语调舒缓上扬、充满善意，句尾常常拖长并轻轻上翘。像在给孙辈讲故事，慈祥、耐心、让人安心，说话时似乎带着微笑。</p></details>
+        <audio controls preload="none" src="out/emo_fear_f.flac" data-page-node-id="eJAXDz6ENLB8ucK4A7iE69"></audio>
+        <div class="meta" data-page-node-id="FbEDiCVHOsNJkIvx3VHNH6">恐惧紧张·女声 · seed 1040 · 18.1s</div>
+        <details data-page-node-id="UyP7Gqnesm78eIBp4xyMa9"><summary data-page-node-id="CNh7QkWZa2Q21mw3Y1Lhbd">音色描述</summary><p data-page-node-id="9XXIyZhAfesVRRievVF8Cm">二十八岁女性声音，情绪恐惧紧张：音色发抖发紧、音调偏高且不稳，语速忽快忽慢，气息短促、声音发虚，句尾常常断掉或颤抖，中间有倒吸气。像独自在黑暗中遇到可怕的事，强撑着把话说完。</p></details>
+      </div>
+      <div class="card" data-page-node-id="8S7AwFkV0ejwRYtHAO8M6z">
+        <div class="card-head" data-page-node-id="fWRZFeTrRO1fve6jrLjEgy">
+          <span class="tag" data-page-node-id="KY27qHAi1K9eatqTw3wZ2X">惊讶/错愕</span>
+          <span class="key" data-page-node-id="VD8Z5TMqwGvZ2ORWkwDbRZ">emo_surprise_m</span>
+        </div>
+        <audio controls preload="none" src="out/emo_surprise_m.flac" data-page-node-id="JNQRO53Ebq8ZeRK4IX9PhJ"></audio>
+        <div class="meta" data-page-node-id="9BI4AcH4YVVMH7GF7DSjJX">惊讶错愕·男声 · seed 1041 · 12.1s</div>
+        <details data-page-node-id="elxL4TIp5Oi9gaeJ0UXjRH"><summary data-page-node-id="33bmVp3OzyfvlCza9mTn8h">音色描述</summary><p data-page-node-id="Xr82h31IY6N4ppPmjPUYSM">三十岁男性声音，情绪惊讶：开头有明显的倒吸气，音调骤然拔高，语速先快后慢，句尾上扬成问句，音色清亮、气息急促，中间夹着结巴和'什么''真的假的'之类的下意识反应。像听到完全意料之外的消息，一时没反应过来。</p></details>
+      </div>
+      <div class="card" data-page-node-id="kMRVJZ3C7uK1dE7DIm7who">
+        <div class="card-head" data-page-node-id="pmODUMBXcOiTeaJZP6Auqc">
+          <span class="tag" data-page-node-id="eotRaM1h1KYKwcxNLMsdpO">撒娇/软糯</span>
+          <span class="key" data-page-node-id="j8UZPaUSKNZQkbX9apKnzP">emo_cute_f</span>
+        </div>
+        <audio controls preload="none" src="out/emo_cute_f.flac" data-page-node-id="zuAf0kC8gnMIStALzdxfJX"></audio>
+        <div class="meta" data-page-node-id="NcHsQeRR3s1HgiWB89AobW">撒娇软糯·女声 · seed 1042 · 14.1s</div>
+        <details data-page-node-id="NXbWHJ3BBpjpSgqNVkEDYH"><summary data-page-node-id="g8CxjYFXllLTfFWBYsuesL">音色描述</summary><p data-page-node-id="bmTNncsQO5RTs18DBrBmtR">二十五岁女性声音，撒娇状态：音调明显偏高、音色软糯甜腻，语速偏慢，尾音拖长并轻轻上扬，带明显的鼻音和气声，咬字略含糊、带一点哼唧。像年轻女孩在跟恋人讨要东西，甜、软、黏人。</p></details>
+      </div>
+      <div class="card" data-page-node-id="1Fv5u7SUEQiRZHhB3bKHUt">
+        <div class="card-head" data-page-node-id="L0bPfs3dY1OniMg0R2dALA">
+          <span class="tag" data-page-node-id="1vYdw4bK3Atd2YLa0R5wiI">疲惫/无力</span>
+          <span class="key" data-page-node-id="MbE3rQpG7Z8hqg8yqCTgms">emo_tired_m</span>
+        </div>
+        <audio controls preload="none" src="out/emo_tired_m.flac" data-page-node-id="QyDye9nhRq2p8z2uMlvfwD"></audio>
+        <div class="meta" data-page-node-id="uCVjSRjsnV0ZyYGZWJzEBy">疲惫无力·男声 · seed 1043 · 22.2s</div>
+        <details data-page-node-id="wztJuv4iFb3ES1IpXzqwJj"><summary data-page-node-id="2YCrn9Fw0jXEASrmFwB8iG">音色描述</summary><p data-page-node-id="1UvYd6peSWVaEmU4hs5V7s">四十岁男性声音，极度疲惫：语速很慢、音调低沉平直几乎没有起伏，音色沙哑发虚、中气不足，字与字之间拖沓，句尾无力地下垂并带叹息。像连续加班三天没睡觉后勉强开口，懒散、倦怠、提不起劲。</p></details>
+      </div>
+      <div class="card" data-page-node-id="FYRiuQOTDKZXiKumgINN2B">
+        <div class="card-head" data-page-node-id="HXSrxSbBNCPfHEeZTQGugR">
+          <span class="tag" data-page-node-id="ke2SwcPQqTZCEqM4WQST8a">严肃/威胁</span>
+          <span class="key" data-page-node-id="vkCNc3nIZqCu3numvfyY25">emo_cold_m</span>
+        </div>
+        <audio controls preload="none" src="out/emo_cold_m.flac" data-page-node-id="eFa61cKsXWlptpEp4oPo5J"></audio>
+        <div class="meta" data-page-node-id="3Havri4NmXVIei8Z8sFP1C">冰冷威胁·男声 · seed 1044 · 14.3s</div>
+        <details data-page-node-id="R5C1REG92n07aDJvKnM55s"><summary data-page-node-id="CYBxpjZqbmEegOBOJvAJh7">音色描述</summary><p data-page-node-id="IqkEDIaSFjampABW2J7fSO">四十岁男性声音，音色低沉压抑，情绪严肃带威胁感：语速很慢、音量压得很低但字字清晰，语调平直下沉、几乎没有起伏，句与句之间有刻意停顿。像反派在平静地下最后通牒，冷静、危险、不怒自威。</p></details>
+      </div>
+      <div class="card" data-page-node-id="6v2hAKYmPQnQbxZVWtGr2M">
+        <div class="card-head" data-page-node-id="jbvGgxdYUJCMwZ6zOMbXM7">
+          <span class="tag" data-page-node-id="jBB4M44XUHKEXbke8Hvr2E">温柔/宠溺</span>
+          <span class="key" data-page-node-id="BdfEb3BNCIJtIvYLQShU2A">emo_tender_f</span>
+        </div>
+        <audio controls preload="none" src="out/emo_tender_f.flac" data-page-node-id="bFl2AFPld2Li1iLbVOQsHH"></audio>
+        <div class="meta" data-page-node-id="pOPhNUFwvK5PpCNKjtio2j">温柔宠溺·女声 · seed 1045 · 16.1s</div>
+        <details data-page-node-id="tSFaJgUnj1CB8X1qzsVIH2"><summary data-page-node-id="83BBnJ6GsHL4PCdR2SW0as">音色描述</summary><p data-page-node-id="Dc21BK6rhXwVkqNGEb9rIA">三十二岁女性声音，温柔宠溺：音调中低、音色柔软带气声，语速慢，语调平缓略上扬，咬字轻柔像怕吵醒谁，句尾轻轻收住。声音里带着笑意和无限耐心，像母亲哄孩子入睡。</p></details>
+      </div>
+      <div class="card" data-page-node-id="T6nVMZL4fgrttXyk0nUFTp">
+        <div class="card-head" data-page-node-id="4WDzEB6YlQRKnPw0DIiTyU">
+          <span class="tag" data-page-node-id="7mMj8dUOnGbsudumzgjKzI">嘲讽/阴阳</span>
+          <span class="key" data-page-node-id="4CKEXRvrk5a9FrpP13yFYP">emo_sarcasm_f</span>
+        </div>
+        <audio controls preload="none" src="out/emo_sarcasm_f.flac" data-page-node-id="JHVOiWiv4pv4KRDAFRUC3f"></audio>
+        <div class="meta" data-page-node-id="DEGoESj9GGBe6nm8SxNULV">阴阳嘲讽·女声 · seed 1046 · 16.1s</div>
+        <details data-page-node-id="ITNckcRH7SM81uXbriZwLG"><summary data-page-node-id="BytiLT4iwJVojLDBaxXfti">音色描述</summary><p data-page-node-id="BNe8oXBqRNNCVaa7ewk28P">三十岁女性声音，阴阳怪气的嘲讽语气：语调刻意拉长、尾音上翘，重音落在奇怪的地方，音色带假声和轻微的鼻音哼气，语速慢。像在明褒暗贬地挤对人，表面客套实则刻薄。</p></details>
+      </div>
+      <div class="card" data-page-node-id="a92vVAoLYyDoosUoK4kbjn">
+        <div class="card-head" data-page-node-id="I1OihNkWBewTD3IpjlmDIs">
+          <span class="tag" data-page-node-id="UpGFKmGNpjx3XZK8mcpz95">崩溃/哭腔</span>
+          <span class="key" data-page-node-id="xUqQ1ylUXGBfBeN17HpIG1">emo_cry_m</span>
+        </div>
+        <audio controls preload="none" src="out/emo_cry_m.flac" data-page-node-id="LDsOUvjQgczwlgwFWXoNGq"></audio>
+        <div class="meta" data-page-node-id="9Ih7khDnBqGB9cGTGbTUFP">崩溃大哭·男声 · seed 1047 · 18.1s</div>
+        <details data-page-node-id="0y9qHHVL7nR1o62FA262zn"><summary data-page-node-id="A6D4RlPuA9LPwOdOELdgRL">音色描述</summary><p data-page-node-id="OqDAwIaxgc8cBRv8EuHHPi">三十岁男性声音，情绪崩溃大哭：声音完全失控，句与句之间被哭腔和抽泣打断，音调忽高忽低、破音明显，气息混乱，吐字因哭泣而含混断续，鼻塞感极重。像再也撑不住、终于哭出声来的状态。</p></details>
       </div></div>
     </section>
 </body>
