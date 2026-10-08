@@ -1,0 +1,21 @@
+﻿key,name,age,gender,timbre,seed,audio,seconds,instruction,save_info
+child_m_lively,男童·清脆活泼,儿童,男,清脆活泼,1000,child_m_lively.flac,20.1,五六岁小男孩的声音，音调高而清脆，奶声奶气但吐字清楚，语速偏快，句尾常常不自觉地扬起来，带着天真好奇的劲儿。音色明亮干净，没有杂质，说话时有孩子气的停顿和换气，偶尔有一点漏风的感觉。情绪饱满，像在跟小伙伴分享新发现。,Saved character 'child_m_lively' to models/voices
+child_f_sweet,女童·甜美稚嫩,儿童,女,甜美稚嫩,1001,child_f_sweet.flac,18.2,六七岁小女孩的声音，音调很高很甜，音色轻盈透亮，像风铃一样。语速适中偏快，吐字带一点孩子气的含糊但整体可辨，句尾习惯性上扬。语气软糯撒娇，充满童真和想象力，偶尔有一两声清脆的笑意藏在字里行间。,Saved character 'child_f_sweet' to models/voices
+teen_m_sunny,少年·阳光朝气,少年,男,阳光朝气,1002,teen_m_sunny.flac,18.1,十五六岁少年的声音，刚过变声期，嗓音清爽里带着一点未定型的青涩，音高比成年男性略高，音色明亮有朝气。语速较快，语调起伏明显，充满少年人的热忱和冲劲，说话干脆利落，偶尔有点毛躁。无沙哑，无低沉。,Saved character 'teen_m_sunny' to models/voices
+teen_f_fresh,少女·清甜灵动,少年,女,清甜灵动,1003,teen_f_fresh.flac,20.2,十六七岁高中女生的声音，音色清甜干净，音调偏高但已经脱去童声，带着少女特有的轻盈感。语速明快，语调活泼有弹性，情绪外放，说话像在跟朋友聊天，偶尔带一点俏皮的尾音上扬。吐字清晰，气息饱满。,Saved character 'teen_f_fresh' to models/voices
+youth_m_clear,青年男·清朗温和,青年,男,清朗温和,1004,youth_m_clear.flac,18.2,二十多岁青年男性的声音，音色清朗干净，音高适中，共鸣位置靠前，说话温和有礼、语速平稳从容，吐字清晰标准。语调自然舒缓，没有夸张起伏，气质阳光干净，像电台里那种让人舒服的年轻男声。,Saved character 'youth_m_clear' to models/voices
+youth_m_magnetic,青年男·磁性低沉,青年,男,磁性低沉,1005,youth_m_magnetic.flac,24.2,二十七八岁男性声音，音域偏低，音色温暖厚实带有明显磁性的低频共振，中气十足但不浑厚。语速偏慢，咬字沉稳有力，气息绵长，语调平直克制、几乎没有上扬，像深夜电台的男主播，松弛且有倾诉感。,Saved character 'youth_m_magnetic' to models/voices
+youth_m_energetic,青年男·活力明快,青年,男,活力明快,1006,youth_m_energetic.flac,18.1,二十多岁男性声音，音色明亮有穿透力，语速快、节奏感强，字与字之间衔接紧凑，重音明确，语调起伏大、富有煽动性和热情，像带货主播或体育解说，中气足、精神饱满，略带一点喊话式的用力感。,Saved character 'youth_m_energetic' to models/voices
+youth_f_sweet,青年女·甜美温柔,青年,女,甜美温柔,1007,youth_f_sweet.flac,22.2,二十多岁女性的声音，音色柔和甜美，音调中偏高，带着轻微的鼻音和气息感，语速舒缓，语调温婉上扬，吐字轻柔圆润。气质亲切体贴，说话像在哄人，尾音常常轻轻飘起来，整体松弛不紧绷。,Saved character 'youth_f_sweet' to models/voices
+youth_f_cool,青年女·清冷知性,青年,女,清冷知性,1008,youth_f_cool.flac,22.1,二十七八岁女性声音，音调中等偏高，音色清冽纯净、几乎没有杂音，咬字极为标准清晰，语速平稳，语调克制平直、起伏很小，情绪冷淡理性。气质疏离而专业，像纪录片解说或有声书里的冷静叙述者。,Saved character 'youth_f_cool' to models/voices
+youth_f_vivid,青年女·活力四射,青年,女,活力四射,1009,youth_f_vivid.flac,18.2,二十出头女性的声音，音调偏高，音色明亮跳跃，语速快、节奏轻快，语调起伏夸张、表情丰富，常有上扬的惊叹尾音。中气足、感染力强，像综艺节目里的活泼女主持，说话带笑意，朝气蓬勃。,Saved character 'youth_f_vivid' to models/voices
+mid_m_mellow,中年男·醇厚沉稳,中年,男,醇厚沉稳,1010,mid_m_mellow.flac,20.1,四十多岁成熟男性的声音，低沉醇厚，嗓音带有自然的胸腔共鸣，语速平缓从容，吐字清晰标准，语调稳定克制，没有夸张起伏。气质沉稳可靠、温和内敛，略带阅历感，无沙哑破音，不生硬冰冷也不油腻，像阅历丰富的儒雅男士，说话松弛自然，停顿合理。,Saved character 'mid_m_mellow' to models/voices
+mid_m_strong,中年男·浑厚有力,中年,男,浑厚有力,1011,mid_m_strong.flac,22.1,四十多岁男性声音，音域低，音色浑厚粗粝、胸腔和鼻腔共鸣都很重，中气极足，音量感强。语速慢而稳，每个字都咬得实、落得重，语调下沉，带有权威感和压迫感，像新闻联播播音员或企业宣传片旁白，庄重、可信、不容置疑。,Saved character 'mid_m_strong' to models/voices
+mid_m_gentle,中年男·温和儒雅,中年,男,温和儒雅,1012,mid_m_gentle.flac,22.2,四十多岁男性声音，音调中等，音色温润柔和略带一点书卷气，语速中等偏慢，咬字轻巧文雅，语调平缓上行、带着讲解的耐心。气质儒雅亲切，像大学教授或博物馆讲解员，说话不疾不徐，声音里带着笑意和包容感。,Saved character 'mid_m_gentle' to models/voices
+mid_f_warm,中年女·温婉柔和,中年,女,温婉柔和,1013,mid_f_warm.flac,22.1,四十岁左右女性的声音，音调中等，音色温润饱满，带着成熟女性特有的柔和质感，语速舒缓，吐字圆润，语调温和起伏自然。气质亲切包容，像邻家阿姨或深夜情感节目女主播，说话有安抚感，声音里带着笑意。,Saved character 'mid_f_warm' to models/voices
+mid_f_crisp,中年女·干练职业,中年,女,干练职业,1014,mid_f_crisp.flac,20.2,三十八九岁职业女性声音，音调中等，音色干脆利落、几乎没有气声，咬字精准、语速偏快，节奏感和逻辑重音都很明确，语调平稳少起伏。气质专业干练，像新闻女主播或企业发布会主持人，理性、清晰、有分寸感。,Saved character 'mid_f_crisp' to models/voices
+mid_f_elegant,中年女·知性优雅,中年,女,知性优雅,1015,mid_f_elegant.flac,22.1,四十多岁女性的声音，音调中低，音色细腻优雅带轻微的醇厚感，语速从容不迫，吐字讲究，语调舒缓下行，句尾常常轻轻收住。气质知性安静，像文学作品的朗读者，声音里有厚度和分寸，优雅而不冷淡。,Saved character 'mid_f_elegant' to models/voices
+senior_m_hoarse,老年男·沧桑沙哑,老年,男,沧桑沙哑,1016,senior_m_hoarse.flac,36.3,七十岁左右老爷爷的声音，音调低沉，音色明显沙哑粗糙、带颗粒感和气息声，声带松弛使尾音有轻微颤抖和拖沓。语速慢，吐字略含混但基本可辨，语调起伏小、平淡悠长。像经历过风霜的老者在慢慢讲述往事，沧桑、质朴、有故事感。,Saved character 'senior_m_hoarse' to models/voices
+senior_m_kind,老年男·慈祥温和,老年,男,慈祥温和,1017,senior_m_kind.flac,36.3,七十多岁老爷爷的声音，音调偏低但柔和不哑，音色温暖带一点老年人的虚化，语速很慢，语调舒缓上扬、充满善意，句尾常常拖长并轻轻上翘。像在给孙辈讲故事，慈祥、耐心、让人安心，说话时似乎带着微笑。,Saved character 'senior_m_kind' to models/voices
+senior_f_kind,老年女·慈爱温和,老年,女,慈爱温和,1018,senior_f_kind.flac,30.4,七十岁左右老奶奶的声音，音调中偏高但音色发虚发飘，带明显的年龄感，语速缓慢，吐字有些松散，语调温和起伏，尾音常常软软地拖长。像邻家奶奶在唠家常，慈爱、絮叨、亲切，说话中气不足但充满疼爱。,Saved character 'senior_f_kind' to models/voices
+senior_f_hoarse,老年女·沙哑缓慢,老年,女,沙哑缓慢,1019,senior_f_hoarse.flac,38.3,七十五岁左右老太太的声音，音调低沉，音色沙哑干涩、有明显的气息摩擦声，声带松弛导致字与字之间有停顿和拖音。语速很慢，音量偏小，语调平直少起伏，吐字略含混。像久病或操劳一生的老妪在低声说话，苍老、迟缓、质朴。,Saved character 'senior_f_hoarse' to models/voices
