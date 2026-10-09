@@ -1,0 +1,98 @@
+{
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "rate": "+0%",
+  "gap": 0.35,
+  "style": "Pixar-style 3D cartoon render, soft warm cinematic lighting, cozy Chinese home and modern hospital settings, a young Chinese woman with brown hair tied in a loose bun, big round glasses, wearing a lavender purple hoodie, expressive 3D character, shallow depth of field, vertical composition, high detail, no text, no letters, no numbers, no watermark, no logo",
+  "scenes": [
+    {
+      "id": "01",
+      "narration": "肿瘤的早期表现很多样，也常常不典型。但身体发出的某些持续信号，值得认真对待。",
+      "prompt": "a young Chinese woman with brown hair in a loose bun and round glasses wearing a lavender purple hoodie standing in a bright modern hospital corridor, facing the camera with a serious caring expression, soft daylight through tall windows",
+      "motion": "in"
+    },
+    {
+      "id": "02",
+      "narration": "第一，身体出现逐渐增大的硬肿块，尤其是乳房、颈部、腋下这些部位。",
+      "prompt": "the same young woman standing in front of a bathroom mirror in a white T-shirt, gently touching the side of her neck with her fingertips while looking at her reflection with concern, soft warm light",
+      "motion": "out"
+    },
+    {
+      "id": "03",
+      "narration": "第二，久治不愈的咳嗽、声音嘶哑，超过两周还不好，要想到肺和喉。",
+      "prompt": "the same young woman sitting on a sofa at home covering her mouth while coughing, a box of tissues beside her, slightly tired expression, warm afternoon light through the window",
+      "motion": "panup"
+    },
+    {
+      "id": "04",
+      "narration": "第三，吞咽困难，吃饭时有哽噎感，可能和食管、胃的病变有关。",
+      "prompt": "the same young woman sitting at a dining table holding a bowl, pausing with a hand raised to her throat, expression showing difficulty swallowing, warm evening light",
+      "motion": "pandown"
+    },
+    {
+      "id": "05",
+      "narration": "第四，长期消化不良、食欲减退、上腹疼痛，吃了药也不见好转。",
+      "prompt": "the same young woman sitting at the dining table pushing an untouched bowl of food away, holding her upper belly with one hand, looking unwell, soft morning light",
+      "motion": "in"
+    },
+    {
+      "id": "06",
+      "narration": "第五，异常的出血和分泌物，比如痰中带血、无痛性血尿、绝经后阴道出血。",
+      "prompt": "the same young woman standing at a bright bathroom sink, looking down at a tissue in her hand with a worried frown, clean white tiles, soft daylight",
+      "motion": "out"
+    },
+    {
+      "id": "07",
+      "narration": "还有鼻涕带血伴单侧耳鸣，以及乳头出现血性溢液，都不能掉以轻心。",
+      "prompt": "the same young woman standing before a mirror in a softly lit bedroom, turning her head to check, one hand near her ear, thoughtful and concerned expression",
+      "motion": "panup"
+    },
+    {
+      "id": "08",
+      "narration": "第六，体重不明原因地明显下降，没节食也没多运动，人却一直在瘦。",
+      "prompt": "the same young woman standing on a bathroom scale looking down at the numbers with a surprised worried expression, loose clothing, soft light, bathroom background",
+      "motion": "pandown"
+    },
+    {
+      "id": "09",
+      "narration": "第七，大便习惯和性状改变，腹泻便秘交替、大便变细、便血或黑便。",
+      "prompt": "the same young woman sitting on the edge of her bed at night holding her phone, troubled expression biting her lip, dim warm bedroom light",
+      "motion": "in"
+    },
+    {
+      "id": "10",
+      "narration": "第八，越来越重的疲劳和贫血，休息也缓不过来，可能提示慢性失血。",
+      "prompt": "the same young woman slumped over a desk at home with her head resting on one arm, exhausted expression with dark shadows under her eyes, a cold cup of tea beside her, dim evening light",
+      "motion": "out"
+    },
+    {
+      "id": "11",
+      "narration": "但要说明，这些都不是肿瘤独有的，持续咳嗽更多见于慢性支气管炎。",
+      "prompt": "a friendly female doctor in a white coat with a stethoscope speaking gently and gesturing reassuringly to the young woman in a bright clinic consultation room, warm daylight, both characters fully clothed",
+      "motion": "in"
+    },
+    {
+      "id": "12",
+      "narration": "体重下降也可能来自甲亢或糖尿病。真正的关键词，是持续性和进行性。",
+      "prompt": "the friendly female doctor in white coat sitting across from the young woman in the clinic, explaining with calm open hand gestures, the young woman listening carefully and nodding, soft light",
+      "motion": "pandown"
+    },
+    {
+      "id": "13",
+      "narration": "症状出现后，常规处理仍不缓解，或者持续超过两到四周，就要高度警惕。",
+      "prompt": "the friendly female doctor in white coat looking at the camera and raising one finger with a serious attentive expression in the bright clinic, the young woman beside her listening, cinematic",
+      "motion": "out"
+    },
+    {
+      "id": "14",
+      "narration": "别自己在网上对号入座，把症状当成检查信号，去正规医院明确病因。",
+      "prompt": "the young woman walking with determined steps through the bright lobby of a modern hospital toward the registration hall, carrying a small bag, daylight through glass windows",
+      "motion": "panup"
+    },
+    {
+      "id": "15",
+      "narration": "再结合年龄、家族史、吸烟史，做针对性筛查，才是早发现的关键。",
+      "prompt": "the friendly female doctor in white coat and the young woman standing together smiling in a bright modern hospital corridor, the doctor gesturing warmly, hopeful optimistic mood, golden light",
+      "motion": "out"
+    }
+  ]
+}

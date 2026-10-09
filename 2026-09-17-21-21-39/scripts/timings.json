@@ -1,0 +1,110 @@
+{
+  "timeline": [
+    {
+      "id": "01",
+      "start": 0.0,
+      "dur": 10.488,
+      "narration": "胃癌、食管癌、结直肠癌，早期几乎没有感觉。但身体其实早就悄悄递过信号，只是很多人没有看懂。",
+      "prompt": "a young Chinese woman with brown hair in a loose bun and round glasses wearing a lavender purple hoodie standing in a dim kitchen at night, opening the refrigerator door, warm fridge glow lighting her worried thoughtful face, she glances toward camera",
+      "motion": "in"
+    },
+    {
+      "id": "02",
+      "start": 10.838,
+      "dur": 8.64,
+      "narration": "第一个信号，是吞咽的时候，总觉得胸骨后面有东西挡着，咽下去费劲，而且一天比一天严重。",
+      "prompt": "the same young woman sitting at a wooden dinner table at home, holding a bowl of rice, suddenly pausing mid-bite with a hand pressed on her upper chest, face showing discomfort and effort to swallow, warm evening light",
+      "motion": "out"
+    },
+    {
+      "id": "03",
+      "start": 19.828,
+      "dur": 7.776,
+      "narration": "第二个信号，是上腹部总是隐隐作痛，吃了胃药也不见好，人还莫名其妙地瘦了下来。",
+      "prompt": "the same young woman leaning on the kitchen counter holding her upper belly with both hands, eyes closed in dull pain, a small medicine bottle and a glass of water beside her, soft morning light",
+      "motion": "panup"
+    },
+    {
+      "id": "04",
+      "start": 27.954,
+      "dur": 8.16,
+      "narration": "第三个信号，是大便突然发黑，黑得像柏油一样，这往往是消化道里，正在悄悄地出血。",
+      "prompt": "the same young woman standing in a bright bathroom, looking down with a shocked and worried expression, one hand covering her mouth, blue and white tiles, soft daylight",
+      "motion": "pandown"
+    },
+    {
+      "id": "05",
+      "start": 36.464,
+      "dur": 9.216,
+      "narration": "第四个信号，是大便带血，别急着都当成痔疮，血色发暗、混在大便里面的，更要格外当心。",
+      "prompt": "the same young woman sitting on the edge of her bed at night in a dim bedroom, holding her phone face down on her knee, anxious expression, biting her lip, cool moonlight through the window",
+      "motion": "in"
+    },
+    {
+      "id": "06",
+      "start": 46.03,
+      "dur": 8.208,
+      "narration": "第五个信号，是排便习惯突然改变，便秘和腹泻交替出现，一持续就是好几个星期。",
+      "prompt": "the same young woman curled up on a living room sofa under a blanket, hugging a cushion against her stomach, uncomfortable expression, soft TV glow in the evening room",
+      "motion": "panup"
+    },
+    {
+      "id": "07",
+      "start": 54.588,
+      "dur": 7.368,
+      "narration": "出现其中一条，不一定就是癌，但只要持续存在、越来越重，就一定要提高警惕。",
+      "prompt": "the same young woman looking at herself in the bathroom mirror, touching her cheek, serious thoughtful expression deciding to take action, soft warm bathroom light",
+      "motion": "out"
+    },
+    {
+      "id": "08",
+      "start": 62.306,
+      "dur": 8.136,
+      "narration": "医生的建议非常明确，四十岁以上的人，哪怕没有任何症状，也应该做一次胃肠镜检查。",
+      "prompt": "a friendly female doctor in a white coat with a stethoscope talking and gesturing kindly to the young woman in a bright modern clinic consultation room, medical diplomas blurred on the wall behind, both characters are fully clothed",
+      "motion": "in"
+    },
+    {
+      "id": "09",
+      "start": 70.792,
+      "dur": 7.776,
+      "narration": "家里有肿瘤病史的，长期抽烟喝酒的，爱吃烫食和腌菜的人，更要提前安排筛查。",
+      "prompt": "a warm Chinese family dinner table with steaming dishes and pickled vegetable plates, elderly parents eating with the young woman, steam rising from hot soup, cozy golden light",
+      "motion": "pandown"
+    },
+    {
+      "id": "10",
+      "start": 78.918,
+      "dur": 7.608,
+      "narration": "很多人怕做胃肠镜，其实现代无痛技术很成熟，睡一觉的功夫，检查就做完了。",
+      "prompt": "a modern clean hospital endoscopy room with a medical scanner bed and soft blue ambient glow, a nurse in scrubs adjusting equipment, the young woman lying calmly on the bed with a blanket, relaxed expression",
+      "motion": "in"
+    },
+    {
+      "id": "11",
+      "start": 86.876,
+      "dur": 8.232,
+      "narration": "早期的消化道癌症，规范治疗以后，五年生存率可以超过九成，关键就是一个字，早。",
+      "prompt": "the friendly female doctor in white coat smiling and giving a thumbs up in the bright clinic, the young woman beside her smiling with relief and hope, sunlight through the window",
+      "motion": "out"
+    },
+    {
+      "id": "12",
+      "start": 95.458,
+      "dur": 7.104,
+      "narration": "身体递来的纸条，别不当回事，读懂这些信号，就是给自己上的第一道保险。",
+      "prompt": "the young woman standing by a sunny window at home holding a warm cup of tea, smiling confidently at the camera, morning light, hopeful mood",
+      "motion": "in"
+    },
+    {
+      "id": "13",
+      "start": 102.912,
+      "dur": 6.216,
+      "narration": "把这条视频转发给家人，一次及时的检查，可能就是一辈子的安心。",
+      "prompt": "a happy family of three hugging warmly at the doorway of their home at sunset, the young woman hugging her parents, golden hour light, heartwarming ending scene",
+      "motion": "out"
+    }
+  ],
+  "gap": 0.35,
+  "total": 109.13
+}

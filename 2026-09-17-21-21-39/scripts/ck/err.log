@@ -1,0 +1,62 @@
+ffmpeg version N-109957-g373ef1c4fa-20230302 Copyright (c) 2000-2023 the FFmpeg developers
+  built with gcc 12.2.0 (crosstool-NG 1.25.0.90_cf9beb1)
+  configuration: --prefix=/ffbuild/prefix --pkg-config-flags=--static --pkg-config=pkg-config --cross-prefix=x86_64-w64-mingw32- --arch=x86_64 --target-os=mingw32 --enable-gpl --enable-version3 --disable-debug --disable-w32threads --enable-pthreads --enable-iconv --enable-libxml2 --enable-zlib --enable-libfreetype --enable-libfribidi --enable-gmp --enable-lzma --enable-fontconfig --enable-libvorbis --enable-opencl --disable-libpulse --enable-libvmaf --disable-libxcb --disable-xlib --enable-amf --enable-libaom --enable-libaribb24 --enable-avisynth --enable-chromaprint --enable-libdav1d --enable-libdavs2 --disable-libfdk-aac --enable-ffnvcodec --enable-cuda-llvm --enable-frei0r --enable-libgme --enable-libkvazaar --enable-libass --enable-libbluray --enable-libjxl --enable-libmp3lame --enable-libopus --enable-librist --enable-libssh --enable-libtheora --enable-libvpx --enable-libwebp --enable-lv2 --disable-libmfx --enable-libvpl --enable-openal --enable-libopencore-amrnb --enable-libopencore-amrwb --enable-libopenh264 --enable-libopenjpeg --enable-libopenmpt --enable-librav1e --enable-librubberband --enable-schannel --enable-sdl2 --enable-libsoxr --enable-libsrt --enable-libsvtav1 --enable-libtwolame --enable-libuavs3d --disable-libdrm --disable-vaapi --enable-libvidstab --enable-vulkan --enable-libshaderc --enable-libplacebo --enable-libx264 --enable-libx265 --enable-libxavs2 --enable-libxvid --enable-libzimg --enable-libzvbi --extra-cflags=-DLIBTWOLAME_STATIC --extra-cxxflags= --extra-ldflags=-pthread --extra-ldexeflags= --extra-libs=-lgomp --extra-version=20230302
+  libavutil      58.  3.100 / 58.  3.100
+  libavcodec     60.  6.100 / 60.  6.100
+  libavformat    60.  4.100 / 60.  4.100
+  libavdevice    60.  2.100 / 60.  2.100
+  libavfilter     9.  4.100 /  9.  4.100
+  libswscale      7.  2.100 /  7.  2.100
+  libswresample   4. 11.100 /  4. 11.100
+  libpostproc    57.  2.100 / 57.  2.100
+Input #0, image2, from 'scripts/ck/s01.jpg':
+  Duration: 00:00:00.04, start: 0.000000, bitrate: 7160 kb/s
+  Stream #0:0: Video: mjpeg (Baseline), yuvj420p(pc, bt470bg/unknown/unknown), 720x427, 25 fps, 25 tbr, 25 tbn
+Input #1, image2, from 'scripts/ck/s02.jpg':
+  Duration: 00:00:00.04, start: 0.000000, bitrate: 5676 kb/s
+  Stream #1:0: Video: mjpeg (Baseline), yuvj420p(pc, bt470bg/unknown/unknown), 720x427, 25 fps, 25 tbr, 25 tbn
+Input #2, image2, from 'scripts/ck/s04.jpg':
+  Duration: 00:00:00.04, start: 0.000000, bitrate: 5143 kb/s
+  Stream #2:0: Video: mjpeg (Baseline), yuvj420p(pc, bt470bg/unknown/unknown), 720x427, 25 fps, 25 tbr, 25 tbn
+Input #3, image2, from 'scripts/ck/s05.jpg':
+  Duration: 00:00:00.04, start: 0.000000, bitrate: 6785 kb/s
+  Stream #3:0: Video: mjpeg (Baseline), yuvj420p(pc, bt470bg/unknown/unknown), 720x427, 25 fps, 25 tbr, 25 tbn
+Input #4, image2, from 'scripts/ck/s06.jpg':
+  Duration: 00:00:00.04, start: 0.000000, bitrate: 4506 kb/s
+  Stream #4:0: Video: mjpeg (Baseline), yuvj420p(pc, bt470bg/unknown/unknown), 720x427, 25 fps, 25 tbr, 25 tbn
+Input #5, image2, from 'scripts/ck/s07.jpg':
+  Duration: 00:00:00.04, start: 0.000000, bitrate: 5778 kb/s
+  Stream #5:0: Video: mjpeg (Baseline), yuvj420p(pc, bt470bg/unknown/unknown), 720x427, 25 fps, 25 tbr, 25 tbn
+Input #6, image2, from 'scripts/ck/s08.jpg':
+  Duration: 00:00:00.04, start: 0.000000, bitrate: 5299 kb/s
+  Stream #6:0: Video: mjpeg (Baseline), yuvj420p(pc, bt470bg/unknown/unknown), 720x427, 25 fps, 25 tbr, 25 tbn
+Input #7, image2, from 'scripts/ck/s09.jpg':
+  Duration: 00:00:00.04, start: 0.000000, bitrate: 5825 kb/s
+  Stream #7:0: Video: mjpeg (Baseline), yuvj420p(pc, bt470bg/unknown/unknown), 720x427, 25 fps, 25 tbr, 25 tbn
+Input #8, image2, from 'scripts/ck/s10.jpg':
+  Duration: 00:00:00.04, start: 0.000000, bitrate: 4776 kb/s
+  Stream #8:0: Video: mjpeg (Baseline), yuvj420p(pc, bt470bg/unknown/unknown), 720x427, 25 fps, 25 tbr, 25 tbn
+Input #9, image2, from 'scripts/ck/s11.jpg':
+  Duration: 00:00:00.04, start: 0.000000, bitrate: 5359 kb/s
+  Stream #9:0: Video: mjpeg (Baseline), yuvj420p(pc, bt470bg/unknown/unknown), 720x427, 25 fps, 25 tbr, 25 tbn
+Input #10, image2, from 'scripts/ck/s12.jpg':
+  Duration: 00:00:00.04, start: 0.000000, bitrate: 6010 kb/s
+  Stream #10:0: Video: mjpeg (Baseline), yuvj420p(pc, bt470bg/unknown/unknown), 720x427, 25 fps, 25 tbr, 25 tbn
+Input #11, image2, from 'scripts/ck/s13.jpg':
+  Duration: 00:00:00.04, start: 0.000000, bitrate: 5885 kb/s
+  Stream #11:0: Video: mjpeg (Baseline), yuvj420p(pc, bt470bg/unknown/unknown), 720x427, 25 fps, 25 tbr, 25 tbn
+Stream mapping:
+  Stream #0:0 (mjpeg) -> hstack
+  Stream #1:0 (mjpeg) -> hstack
+  Stream #2:0 (mjpeg) -> hstack
+  Stream #3:0 (mjpeg) -> hstack
+  Stream #4:0 (mjpeg) -> hstack
+  Stream #5:0 (mjpeg) -> hstack
+  Stream #6:0 (mjpeg) -> hstack
+  Stream #7:0 (mjpeg) -> hstack
+  Stream #8:0 (mjpeg) -> hstack
+  Stream #9:0 (mjpeg) -> hstack
+  Stream #10:0 (mjpeg) -> hstack
+  Stream #11:0 (mjpeg) -> hstack
+  vstack:default -> Stream #0:0 (mjpeg)
+Press [q] to stop, [?] for help
